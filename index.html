@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=3.0"
     />
-    <title>monami-main-ui</title>
+    <title>IOPE</title>
     <link rel="stylesheet" href="style.css" />
     <style type="text/css"></style>
     <script
@@ -15,245 +15,93 @@
     ></script>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
-    />
-    <!--aos-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS 라이브러리 불러오기-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <!--swiper-->
-    <!--비교적 쉬움 구글링 하면 디자인 수정법도 적혀있음 확인할 것-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <style media="screen"></style>
   </head>
 
   <body>
+    <!--이미지 따로 사용, 히어로 이미지 모색-->
     <main>
-      <header class="flexs">
-        <div class="navs">
-          <div class="wraps space-betweens">
-            <nav id="nav">
-              <div class="space-betweens align-centers wraps">
-                <a href="#"
-                  ><img
-                    src="https://www.timberland.co.kr/cmsstatic/theme/1/gnb_Timberland_BI.svg"
-                /></a>
-                <div class="space-betweens align-centers">
-                  <ul class="space-betweens">
-                    <li class="paddings">
-                      <a href="javascript:void(0)" onclick="showham1()">ICON</a>
-                    </li>
-                    <li class="paddings">
-                      <a href="javascript:void(0)" onclick="showham2()">MEN</a>
-                    </li>
-                    <li class="paddings">
-                      <a href="javascript:void(0)" onclick="showham3()"
-                        >WOMEN</a
-                      >
-                    </li>
-                    <li class="paddings">
-                      <a href="javascript:void(0)" onclick="showham4()">KIDS</a>
-                    </li>
-                    <li class="paddings">
-                      <a href="javascript:void(0)" onclick="showham5()">ACC</a>
-                    </li>
-                    <li class="paddings">
-                      <a href="javascript:void(0)" onclick="showham6()">SALE</a>
-                    </li>
-                    <li class="paddings">
-                      <a href="javascript:void(0)" onclick="showham7()"
-                        >RESPONSIBILITY</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="navs_menu flexs">
-                  <div onclick="openPcTap()" class="mobile_none">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-
-              <!--sd-menu-->
-              <div class="sd-menu1" id="sd-menu1">
-                <ul class="centers">
-                  <li>
-                    <a href="javascript:void(0)">6인치부츠</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">보트슈즈</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"
-                      ><img
-                        src="https://image.timberland.co.kr/cmsstatic/menu/10806/Menu_icon_img.jpg"
-                      />
-                      <div>Men's 6-inch Premium Yellow Boots</div></a
-                    >
-                  </li>
-                </ul>
-                <div id="closehambtn1" onclick="closeham1()"></div>
-              </div>
-              <div class="sd-menu2" id="sd-menu2">
-                <ul class="centers">
-                  <li>
-                    <a href="javascript:void(0)">남성신발</a>
-                    <ul>
-                      <li><a href="javascript:void(0)">남성 부츠</a></li>
-                      <li><a href="javascript:void(0)">남성 일반슈즈</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">남성의류</a>
-                    <ul>
-                      <li><a href="javascript:void(0)">남성 아우터</a></li>
-                      <li>
-                        <a href="javascript:void(0)">남성 티셔츠/맨투맨/후드</a>
-                      </li>
-                      <li><a href="javascript:void(0)">남성 팬츠</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"
-                      ><img
-                        src="https://image.timberland.co.kr/cmsstatic/menu/10859/Menu_men_img.jpg"
-                      />
-                      <div>Men's Seneca Bay Sneakers</div></a
-                    >
-                  </li>
-                </ul>
-                <div id="closehambtn2" onclick="closeham2()"></div>
-              </div>
-              <div class="sd-menu3" id="sd-menu3">
-                <ul class="centers">
-                  <li>
-                    <a href="javascript:void(0)">여성신발</a>
-                    <ul>
-                      <li><a href="javascript:void(0)">여성 부츠</a></li>
-                      <li><a href="javascript:void(0)">여성 일반슈즈</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">여성의류</a>
-                    <ul>
-                      <li><a href="javascript:void(0)">여성 아우터</a></li>
-                      <li>
-                        <a href="javascript:void(0)">여성 티셔츠/맨투맨/후드</a>
-                      </li>
-                      <li><a href="javascript:void(0)">여성 팬츠/스커트</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"
-                      ><img
-                        src="https://image.timberland.co.kr/cmsstatic/menu/Menu_women_img.jpg"
-                      />
-                      <div>Women's ray city Bold Sneakers</div></a
-                    >
-                  </li>
-                </ul>
-                <div id="closehambtn3" onclick="closeham3()"></div>
-              </div>
-              <div class="sd-menu4" id="sd-menu4">
-                <ul class="centers">
-                  <li>
-                    <a href="javascript:void(0)"
-                      >옐로부츠 무료 케어 서비스 신청하기</a
-                    >
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"
-                      >신규회원 2만원 웰컴쿠폰 증정</a
-                    >
-                  </li>
-                </ul>
-                <div id="closehambtn4" onclick="closeham4()"></div>
-              </div>
-              <div class="sd-menu5" id="sd-menu5">
-                <ul class="centers">
-                  <li>
-                    <a href="javascript:void(0)">가방</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">PRODUCT CARE</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">모자</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"
-                      ><img
-                        src="https://image.timberland.co.kr/cmsstatic/menu/Menu_acc_img.jpg"
-                      />
-                      <div>Bucket Hat by Raeburn</div></a
-                    >
-                  </li>
-                </ul>
-                <div id="closehambtn5" onclick="closeham5()"></div>
-              </div>
-              <div class="sd-menu6" id="sd-menu6">
-                <ul class="centers">
-                  <li>
-                    <a href="javascript:void(0)">신발 SALE</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">의류 SALE</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">액세서리 SALE</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"
-                      ><img
-                        src="https://image.timberland.co.kr/cmsstatic/menu/10892/Gnb_banner_sale.jpg"
-                      />
-                      <div>Men's Original 6-Inch Boot</div></a
-                    >
-                  </li>
-                </ul>
-                <div id="closehambtn6" onclick="closeham6()"></div>
-              </div>
-              <div class="sd-menu7" id="sd-menu7">
-                <ul class="centers">
-                  <li>
-                    <a href="javascript:void(0)"
-                      >신규회원 2만원 웰컴쿠폰 증정</a
-                    >
-                  </li>
-                </ul>
-                <div id="closehambtn7" onclick="closeham7()"></div>
-              </div>
-            </nav>
-            <div
-              class="filter-dark"
-              id="filter-dark"
-              onclick="closeham()"
-            ></div>
+      <header>
+        <div class="space-betweens align-centers">
+          <!--logo-->
+          <div class="logo paddings">
+            <img
+              src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1836931c708e3fdc944896125360350c4bdb8671/img/logo.svg"
+            />
           </div>
+          <nav id="nav" class="space-betweens aline-centers">
+            <!--dropdown-->
+            <div class="dropdown space-betweens">
+              <ul class="space-betweens">
+                <li>
+                  <a href="javascript:void(0)" onclick="showham1()"
+                    >베스트셀러</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)" onclick="showham2()">제품</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" onclick="showham3()"
+                    >아이오페 소개</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)" onclick="showham4()"
+                    >아이오페 랩</a
+                  >
+                </li>
+              </ul>
+              <div class="navs_menu flexs">
+                <div onclick="openPcTap()" class="ham mobile_none">
+                  <span></span> <span></span> <span></span>
+                </div>
+              </div>
+            </div>
+            <!--sd-menu-->
+            <div class="sd-menu1" id="sd-menu1">
+              <ul class="centers">
+                <li>
+                  <a href="javascript:void(0)"
+                    >가장 사랑받은 아이오페의 베스트셀러 제품들을 만나보세요.</a
+                  >
+                </li>
+              </ul>
+              <div id="closehambtn1" onclick="closeham1()">✕</div>
+            </div>
+            <div class="sd-menu2" id="sd-menu2">
+              <ul class="centers">
+                <li><a href="javascript:void(0)">신제품</a></li>
+                <li><a href="javascript:void(0)">스킨케어</a></li>
+                <li><a href="javascript:void(0)">메이크업</a></li>
+                <li><a href="javascript:void(0)">맨</a></li>
+              </ul>
+              <div id="closehambtn2" onclick="closeham2()">✕</div>
+            </div>
+            <div class="sd-menu3" id="sd-menu3">
+              <ul class="centers">
+                <li><a href="javascript:void(0)">주요 수상내역</a></li>
+                <li><a href="javascript:void(0)">브랜드 스토리</a></li>
+                <li><a href="javascript:void(0)">브랜드 히스토리</a></li>
+                <li><a href="javascript:void(0)">뉴스</a></li>
+                <li><a href="javascript:void(0)">갤러리</a></li>
+              </ul>
+              <div id="closehambtn3" onclick="closeham3()">✕</div>
+            </div>
+            <div class="sd-menu4" id="sd-menu4">
+              <ul class="centers">
+                <li><a href="javascript:void(0)">소개</a></li>
+                <li><a href="javascript:void(0)">온라인 셀프 피부 진단</a></li>
+                <li><a href="javascript:void(0)">피부미래 솔루션</a></li>
+                <li><a href="javascript:void(0)">스킨 뉴스</a></li>
+              </ul>
+              <div id="closehambtn4" onclick="closeham4()">✕</div>
+            </div>
+          </nav>
+          <div class="filter-dark" id="filter-dark" onclick="closeham()"></div>
         </div>
-
         <div id="pcTap" class="mobile_none">
           <div class="pc_tap_main">
             <div onclick="closePcTap()" id="closePcTap">✖</div>
@@ -265,7 +113,7 @@
                     class="tabmenu-button tabpc tabpc-color"
                     onclick="openPc(event,'pc1')"
                   >
-                    은행소개
+                    베스트셀러
                   </button>
                 </div>
                 <div>
@@ -274,7 +122,7 @@
                     class="tabmenu-button tabpc"
                     onclick="openPc(event,'pc2')"
                   >
-                    IR투자정보
+                    제품
                   </button>
                 </div>
                 <div>
@@ -283,7 +131,7 @@
                     class="tabmenu-button tabpc"
                     onclick="openPc(event,'pc3')"
                   >
-                    상품안내
+                    아이오페 소개
                   </button>
                 </div>
                 <div>
@@ -292,187 +140,98 @@
                     class="tabmenu-button tabpc"
                     onclick="openPc(event,'pc4')"
                   >
-                    고객센터
+                    아이오페 랩
                   </button>
                 </div>
               </div>
               <div id="pc1" class="pc">
                 <div>
-                  <ul>
-                    <p>카카오뱅크</p>
-                    <li>브랜드</li>
-                    <li>주주사 소개</li>
-                    <li>오시는 길</li>
-                    <li>제휴문의</li>
-                  </ul>
-                </div>
-                <div>
-                  <ul>
-                    <p>윤리경영</p>
-                    <li>윤리강령</li>
-                    <li>임직원행동기준</li>
-                  </ul>
-                </div>
-                <div>
-                  <p>인재영입 ></p>
-                </div>
-                <div>
-                  <ul>
-                    <p>새소식</p>
-                    <li>공지사항</li>
-                    <li>보도자료</li>
-                    <li>입찰공고</li>
-                  </ul>
+                  <img
+                    src="https://github.com/heyangineer/iope-main-ui/blob/main/img/iope-best-seller.PNG?raw=true"
+                  />
                 </div>
               </div>
               <div id="pc2" class="pc" style="visibility: hidden">
                 <div>
                   <ul>
-                    <p>공시정보</p>
-                    <li>전자공시</li>
-                    <li>경영공시</li>
-                    <li>바젤공시</li>
-                    <li>공시규정</li>
+                    <p>신제품</p>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <p>경영정보</p>
-                    <li>이사회</li>
-                    <li>지속가능경영</li>
+                    <p>스킨케어</p>
+                    <li>피부 고민별</li>
+                    <li>유형별</li>
+                    <li>라인별</li>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <p>재무정보</p>
-                    <li>재무제표</li>
-                    <li>감사보고서</li>
-                    <li>영업보고서</li>
-                    <li>신용등급</li>
+                    <p>메이크업</p>
+                    <li>유형별</li>
+                    <li>라인별</li>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <p>IR자료실</p>
-                    <li>실적발표</li>
-                    <li>추가정보</li>
+                    <p>맨</p>
+                    <li>고민별</li>
+                    <li>유형별</li>
                   </ul>
-                </div>
-                <div>
-                  <ul>
-                    <p>IR일정</p>
-                    <li>IR행사</li>
-                    <li>IR미팅예약</li>
-                    <li>주주총회</li>
-                  </ul>
-                </div>
-                <div>
-                  <p>공고</p>
                 </div>
               </div>
               <div id="pc3" class="pc" style="visibility: hidden">
                 <div>
                   <ul>
-                    <p>예적금</p>
-                    <li>입출금통장</li>
-                    <li>모임통장</li>
-                    <li>세이프박스</li>
-                    <li>저금통</li>
-                    <li>정기예금</li>
-                    <li>자유적금</li>
-                    <li>26주적금</li>
+                    <p>주요 수상내역</p>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <p>대출</p>
-                    <li>비상금대출</li>
-                    <li>마이너스 통장대출</li>
-                    <li>신용대출</li>
-                    <li>개인사업자 대출</li>
-                    <li>전월세보증금 대출</li>
-                    <li>주택담보대출</li>
+                    <p>브랜드 스토리</p>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <p>서비스</p>
-                    <li>내 신용정보</li>
-                    <li>해외송금 보내기</li>
-                    <li>해외송금 받기</li>
-                    <li>프랜즈 체크카드</li>
+                    <p>브랜드 히스토리</p>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <p>제휴서비스</p>
-                    <li>증권사 주식계좌</li>
-                    <li>제휴 신용카드</li>
+                    <p>뉴스</p>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <p>mini</p>
-                    <li>카카오뱅크 mini</li>
-                    <li>mini카드</li>
-                    <li>mini 26일저금</li>
+                    <p>갤러리</p>
                   </ul>
                 </div>
               </div>
               <div id="pc4" class="pc" style="visibility: hidden">
                 <div>
                   <ul>
-                    <p>이용안내</p>
-                    <li>자주 묻는 질문</li>
-                    <li>이용시간 안내</li>
-                    <li>ATM 이용안내</li>
-                    <li>금리안내</li>
-                    <li>금리인하요구권 안내</li>
-                    <li>수수료안내</li>
-                    <li>상담안내</li>
+                    <p>소개</p>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <p>상담하기</p>
-                    <li>고객의 소리</li>
-                    <li>1:1 문의</li>
+                    <p>온라인 셀프 피부 진단</p>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <p>소비자보호</p>
-                    <li>소비자보호체계</li>
-                    <li>소비자보호 우수사례</li>
-                    <li>전자민원</li>
-                    <li>소비자보호공사</li>
-                    <li>민원사무편람</li>
-                    <li>금융정보</li>
-                    <li>금융사기 관련공시</li>
-                    <li>보안취약점 신고 안내</li>
+                    <p>피부미래 솔루션</p>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <p>증명서</p>
-                    <li>나의 증명서 발급내역</li>
-                    <li>증명서 진위 확인</li>
-                  </ul>
-                </div>
-                <div>
-                  <ul>
-                    <p>약관 ・ 서식</p>
-                    <li>약관</li>
-                    <li>서식</li>
-                    <li>상품설명서</li>
-                    <li>상품공시</li>
+                    <p>스킨 뉴스</p>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <script>
           function openPc(evt, pcNum) {
             var i, x, tablinks;
@@ -492,4164 +251,536 @@
           }
         </script>
       </header>
-
-      <article class="mobile_checkcard pc_none">
-        <div class="swiper mySwiper">
-          <div class="swiper-pagination"></div>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="https://image.timberland.co.kr/cmsstatic/182/EARTHKEEPERS_banner_desktop.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://image.timberland.co.kr/cmsstatic/BFTB_3rd_main_pc_03.jpg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://image.timberland.co.kr/cmsstatic/BFTB_3rd_main_pc_02.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+      <!--
+        <div>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zIdJDdlcpOA?autoplay=1&mute=1&start=110&end=120&controls=0&loop=1&playlist=zIdJDdlcpOA&playsinline=1" frameborder="0" allowfullscreen></iframe>
         </div>
-      </article>
-
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
+-->
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css"
+      />
+      <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
+      <div
+        id="background"
+        class="player"
+        data-property="{
+        videoURL: 'https://www.youtube.com/watch?v=zIdJDdlcpOA',
+        mute: true,
+        showControls: false,
+        useOnMobile: true,
+        quality: 'highres',
+        containment: 'main',
+        loop: true,
+        autoPlay: true,
+        stopMovieOnBlur: false,
+        startAt: 0,
+        opacity: 1
+        }"
+      ></div>
     </main>
-
-    <!-- 예약검색 -->
-    <article class="searchArea">
-      <section id="tabSearch" class="tabArea">
-        <h2>BOOK NOW</h2>
-        <h3 class="on">
-          <a href="#srchRoom" class="tab">워커힐 객실 예약</a>
-        </h3>
-        <div id="srchRoom" class="tabCont">
-          <form name="mainSearchForm" id="mainSearchForm" method="get">
-            <input type="hidden" name="isDouglas" />
-            <fieldset>
-              <legend>워커힐 객실검색영역</legend>
-              <dl class="stay st03">
-                <dt><label for="checkInDate">숙박 기간</label></dt>
-                <dd class="period">
-                  <dl>
-                    <dd>
-                      숙박 기간을 <br />
-                      선택해 주세요.
-                    </dd>
-                    <dd class="blind">
-                      <input
-                        type="text"
-                        name="checkInDate"
-                        id="checkInDate"
-                        class="sDate"
-                        maxlength="10"
-                        title="숙박시작일 선택"
-                        placeholder="체크인"
-                        value="2022.10.11"
-                        readonly=""
-                      />
-                      <input
-                        type="text"
-                        name="checkOutDate"
-                        id="checkOutDate"
-                        class="eDate"
-                        maxlength="10"
-                        title="숙박종료일 선택"
-                        placeholder="체크아웃"
-                        value="2022.10.12"
-                        readonly=""
-                      />
-                      <span>(<em id="night">1박</em>)</span>
-                      <div class="dateRange" style="display: none"></div>
-                      <button
-                        type="button"
-                        class="comiseo-daterangepicker-triggerbutton ui-button ui-corner-all ui-widget comiseo-daterangepicker-top comiseo-daterangepicker-vfit"
-                        id="drp_autogen0"
-                      >
-                        Select date range...<span class="ui-button-icon-space">
-                        </span
-                        ><span
-                          class="ui-button-icon ui-icon ui-icon-triangle-1-s"
-                        ></span>
-                      </button>
-                    </dd>
-                  </dl>
-                  <input type="text" class="dates" readonly="" />
-                </dd>
-                <dt><label for="roomCount">객실</label></dt>
-                <dd>
-                  <select
-                    name="roomCount"
-                    id="roomCount"
-                    class="option02 st02 select2-hidden-accessible"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="1" selected="">[1]개</option>
-                    <option value="2">[2]개</option>
-                    <option value="3">[3]개</option>
-                    <option value="4">[4]개</option>
-                    <option value="5">[5]개</option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 54px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st02"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-roomCount-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-roomCount-container"
-                          title="[1]개"
-                          ><em>1</em>개</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                </dd>
-                <dt><label for="adult">어른</label></dt>
-                <dd class="tipArea">
-                  <select
-                    name="adult"
-                    id="adult"
-                    class="option02 st02 select2-hidden-accessible"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="1">[1]명</option>
-                    <option value="2" selected="">[2]명</option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 54px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st02"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-adult-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-adult-container"
-                          title="[2]명"
-                          ><em>2</em>명</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                  <div class="tooltip btm blind">
-                    <p class="note">객실 당 인원</p>
-                  </div>
-                </dd>
-                <dt><label for="child">아이</label></dt>
-                <dd class="tipArea">
-                  <select
-                    name="child"
-                    id="child"
-                    class="option02 st02 select2-hidden-accessible"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="0" selected="">[0]명</option>
-                    <option value="1">[1]명</option>
-                    <option value="2">[2]명</option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 54px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st02"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-child-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-child-container"
-                          title="[0]명"
-                          ><em>0</em>명</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                  <div class="tooltip btm blind">
-                    <p class="note">36개월 ~ 만 12세 / 객실 당</p>
-                  </div>
-                </dd>
-              </dl>
-              <div class="btnC">
-                <button
-                  type="button"
-                  class="btn base st01 em03"
-                  onclick="newSearchRoom('kr','mainSearchForm'); searchRoomGa('1');"
-                >
-                  객실 검색
-                </button>
-              </div>
-              <div class="btnR">
-                <button type="button" class="btn txt code">
-                  특별 할인 코드
-                </button>
-                <div class="specialCode">
-                  <dl>
-                    <dt class="blind">
-                      <label for="promotionCode">코드입력</label>
-                    </dt>
-                    <dd>
-                      <input
-                        type="text"
-                        name="promotionCode"
-                        id="promotionCode"
-                        class="error"
-                        placeholder="특별 할인 코드 입력"
-                        maxlength="30"
-                        value=""
-                      />
-                    </dd>
-                    <dd>
-                      <button
-                        type="button"
-                        class="btn base em02"
-                        onclick="checkPromotionCode('mainSearchForm');"
-                      >
-                        확인
-                      </button>
-                    </dd>
-                  </dl>
-                  <p class="error blind">
-                    코드가 일치하지 않습니다. 입력하신 코드를 확인해 주세요.
-                  </p>
-                  <button type="button" id="closeForm" class="ico close st02">
-                    닫기
-                  </button>
-                </div>
-              </div>
-            </fieldset>
-          </form>
+    <!--brand-story에 있는 이미지 활용-->
+    <article class="skin-science space-betweens">
+      <div>
+        <h1 style="color: white; margin-top: 30px">IOPE</h1>
+        <div class="space-betweens align-centers">
+          <!--text area-->
+          <div style="color: white">
+            <p>
+              SKIN SCIENCE
+              <span class="span1"></span>
+            </p>
+            <p>PLANT SCIENCE <span class="span2"></span></p>
+            <p>BIO SCIENCE<span class="span3"></span></p>
+          </div>
+          <!--photo area-->
+          <div class="space-betweens">
+            <div>
+              <img
+                src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1dd6e4476302bf8584a6bf3cebf3a98c8f4c8b34/img/new-philosophy-01.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1dd6e4476302bf8584a6bf3cebf3a98c8f4c8b34/img/new-philosophy-02.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1dd6e4476302bf8584a6bf3cebf3a98c8f4c8b34/img/new-philosophy-03.jpg"
+              />
+            </div>
+          </div>
         </div>
-        <h3>
-          <a
-            href="#srchDining"
-            class="tab"
-            onclick="location.href='/book/Dining'"
-            >워커힐 레스토랑 예약</a
-          >
-        </h3>
-        <div id="srchDining" class="tabCont blind">
-          <form name="reservationForm" id="reservationForm" method="post">
-            <input
-              type="hidden"
-              name="reservationType"
-              id="reservationType"
-              value="DINING"
-            />
-            <input
-              type="hidden"
-              name="reservationToken"
-              id="reservationToken"
-              value="91F0E1D2-DC6E-061D-2DC9-B42EAACDD8A2"
-            />
-            <input
-              type="hidden"
-              name="reservationIndex"
-              id="reservationIndex"
-              value=""
-            />
-            <input type="hidden" name="diningIndex" id="diningIndex" value="" />
-            <input type="hidden" name="prodMcd" id="prodMcd" value="" />
-            <input type="hidden" name="ngsCode" id="ngsCode" value="" />
-            <input type="hidden" name="ngsName" id="ngsName" value="" />
-            <input
-              type="hidden"
-              name="reservationName"
-              id="reservationName"
-              value=""
-            />
-            <input type="hidden" name="contactNo" id="contactNo" value="" />
-            <input type="hidden" name="showType" id="showType" value="" />
-            <fieldset>
-              <legend>레스토랑 검색영역</legend>
-              <dl class="stay st02">
-                <dt><label for="ngsID">레스토랑 선택</label></dt>
-                <dd>
-                  <select
-                    name="ngsID"
-                    id="ngsID"
-                    class="option02 st01 select2-hidden-accessible"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="" title="placeholder">
-                      레스토랑을 - 선택해 주세요.
-                    </option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 184px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st01"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-ngsID-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-ngsID-container"
-                          title="placeholder"
-                          >레스토랑을 <br />
-                          선택해 주세요.</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                </dd>
-                <dt><label for="reservationDate">예약일</label></dt>
-                <dd class="date">
-                  <dl>
-                    <dd>
-                      예약일을 <br />
-                      선택해 주세요.
-                    </dd>
-                    <dd class="blind">
-                      <input type="text" class="dateTxt" readonly="" />
-                    </dd>
-                  </dl>
-                  <input
-                    type="text"
-                    name="reservationDate"
-                    id="reservationDate"
-                    class="date calendar st01 hasDatepicker"
-                    nt-callback="getDiningTimeTable"
-                    readonly=""
-                  />
-                </dd>
-                <dt><label for="reservationTime">시간</label></dt>
-                <dd>
-                  <select
-                    name="reservationTime"
-                    id="reservationTime"
-                    class="option02 select2-hidden-accessible"
-                    required=""
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="" title="placeholder">
-                      시간을 - 선택해 주세요.
-                    </option>
-                    <option value="">점심 11:00</option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 158px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-reservationTime-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-reservationTime-container"
-                          title="placeholder"
-                          >시간을 <br />
-                          선택해 주세요.</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                </dd>
-                <dt><label for="adult">어른</label></dt>
-                <dd>
-                  <select
-                    name="adult"
-                    id="adult"
-                    class="option02 st02 select2-hidden-accessible"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="1">[1]명</option>
-                    <option value="2" selected="">[2]명</option>
-                    <option value="3">[3]명</option>
-                    <option value="4">[4]명</option>
-                    <option value="5">[5]명</option>
-                    <option value="6">[6]명</option>
-                    <option value="7">[7]명</option>
-                    <option value="8">[8]명</option>
-                    <option value="9">[9]명</option>
-                    <option value="10">[10]명</option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 62px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st02"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-adult-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-adult-container"
-                          title="[2]명"
-                          ><em>2</em>명</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                </dd>
-                <dt><label for="child">아이</label></dt>
-                <dd class="tipArea">
-                  <select
-                    name="child"
-                    id="child"
-                    class="option02 st02 select2-hidden-accessible"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="0" selected="">[0]명</option>
-                    <option value="1">[1]명</option>
-                    <option value="2">[2]명</option>
-                    <option value="3">[3]명</option>
-                    <option value="4">[4]명</option>
-                    <option value="5">[5]명</option>
-                    <option value="6">[6]명</option>
-                    <option value="7">[7]명</option>
-                    <option value="8">[8]명</option>
-                    <option value="9">[9]명</option>
-                    <option value="10">[10]명</option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 62px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st02"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-child-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-child-container"
-                          title="[0]명"
-                          ><em>0</em>명</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                  <div class="tooltip btm blind">
-                    <p class="note">36개월 ~ 만 12세</p>
-                  </div>
-                </dd>
-              </dl>
-              <div class="btnC">
-                <button
-                  type="button"
-                  class="btn base st01 em03"
-                  onclick="searchDining('reservationForm');"
-                >
-                  레스토랑 예약
-                </button>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <h3><a href="#srchDarakhyu" class="tab">다락휴 객실 예약</a></h3>
-        <div id="srchDarakhyu" class="tabCont blind">
-          <form name="roomListDarakhyu" id="roomListDarakhyu" method="post">
-            <fieldset>
-              <legend>다락휴 객실검색영역</legend>
-              <dl class="stay st03">
-                <dt><label for="regionDarakhyu">지역 선택</label></dt>
-                <dd>
-                  <select
-                    name="regionDarakhyu"
-                    id="regionDarakhyu"
-                    class="option02 st01 select2-hidden-accessible"
-                    onchange="setDarakhyuHours();changeDarakhyuCalendar();"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="" title="placeholder">
-                      지역을 - 선택해 주세요.
-                    </option>
-                    <option value="yeosu">전라남도 - 여수</option>
-                    <option value="t1">인천공항 - 제1터미널</option>
-                    <option value="t2">인천공항 - 제2터미널</option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 158px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st01"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-regionDarakhyu-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-regionDarakhyu-container"
-                          title="placeholder"
-                          >지역을 <br />
-                          선택해 주세요.</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                </dd>
-                <dt><label for="checkInDarakhyu">날짜</label></dt>
-                <dd class="date">
-                  <dl>
-                    <dd>
-                      날짜를 <br />
-                      선택해 주세요.
-                    </dd>
-                    <dd class="blind">
-                      <input type="text" class="dateTxt" readonly="" />
-                    </dd>
-                  </dl>
-                  <input
-                    type="text"
-                    name="checkInDarakhyu"
-                    id="checkInDarakhyu"
-                    class="date calendar st01 hasDatepicker"
-                    nt-callback="setSearchDate"
-                    readonly=""
-                  />
-                </dd>
-                <dt><label for="inTimeDarakhyu">투숙 시간</label></dt>
-                <dd>
-                  <select
-                    name="inTimeDarakhyu"
-                    id="inTimeDarakhyu"
-                    class="option02 st02 select2-hidden-accessible"
-                    onchange="changeHoursDarakhyu(this.value);"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="" title="placeholder">
-                      기본 [3]시간
-                    </option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 96px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st02"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-inTimeDarakhyu-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-inTimeDarakhyu-container"
-                          title="placeholder"
-                          >기본 <em>3</em>시간</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                </dd>
-                <dt><label for="addHourDarakhyu">추가 시간</label></dt>
-                <dd>
-                  <select
-                    name="addHourDarakhyu"
-                    id="addHourDarakhyu"
-                    class="option02 st02 select2-hidden-accessible"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="3">[0]시간</option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 67px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st02"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-addHourDarakhyu-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-addHourDarakhyu-container"
-                          title="[0]시간"
-                          ><em>0</em>시간</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                </dd>
-              </dl>
-              <div class="btnC">
-                <button
-                  type="button"
-                  class="btn base st01 em03"
-                  onclick="searchRoomDarakhyu();"
-                >
-                  객실 검색
-                </button>
-              </div>
-              <dl class="info01 em06">
-                <dt>위치</dt>
-                <dd>
-                  인천공항 제1터미널 교통센터 1층, 인천공항 제2터미널 교통센터
-                  지하 1층, 전라남도 여수 엑스포 D동 3층
-                </dd>
-              </dl>
-            </fieldset>
-          </form>
-        </div>
-        <h3>
-          <a href="#srchTransit" class="tab" onclick="resetTransitCalendar();"
-            >인천공항 환승호텔 객실 예약</a
-          >
-        </h3>
-        <div id="srchTransit" class="tabCont blind">
-          <form name="roomListTransit" id="roomListTransit" method="post">
-            <fieldset>
-              <legend>환승호텔 객실검색영역</legend>
-              <dl class="stay st01">
-                <dt><label for="region">터미널 선택</label></dt>
-                <dd>
-                  <select
-                    name="region"
-                    id="region"
-                    class="option02 st01 select2-hidden-accessible"
-                    onchange="changePeople();"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="" title="placeholder">
-                      터미널을 - 선택해 주세요.
-                    </option>
-                    <option value="T1">인천공항 - 제1터미널</option>
-                    <option value="T2">인천공항 - 제2터미널</option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 171px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st01"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-region-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-region-container"
-                          title="placeholder"
-                          >터미널을 <br />
-                          선택해 주세요.</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                </dd>
-                <dt><label for="checkInTransit">날짜</label></dt>
-                <dd class="date">
-                  <dl>
-                    <dd>
-                      날짜를 <br />
-                      선택해 주세요.
-                    </dd>
-                    <dd class="blind">
-                      <input type="text" class="dateTxt" readonly="" />
-                    </dd>
-                  </dl>
-                  <input
-                    type="text"
-                    name="checkInTransit"
-                    id="checkInTransit"
-                    class="date calendar st01 hasDatepicker"
-                    readonly=""
-                    nt-callback="setSearchDate"
-                  />
-                </dd>
-                <dt><label for="people">인원</label></dt>
-                <dd class="tipArea">
-                  <select
-                    name="people"
-                    id="people"
-                    class="option02 st02 select2-hidden-accessible"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="" title="placeholder">
-                      최대 [3]명
-                    </option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 83px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st02"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-people-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-people-container"
-                          title="placeholder"
-                          >최대 <em>3</em>명</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                  <div class="tooltip btm blind">
-                    <p class="note">10세 이하 추가요금 없음</p>
-                  </div>
-                </dd>
-                <dt><label for="inTime">투숙 시간</label></dt>
-                <dd>
-                  <select
-                    name="inTime"
-                    id="inTime"
-                    class="option02 st02 em01 select2-hidden-accessible"
-                    onchange="changeHours();"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="" title="placeholder">기본 [6]시간</option>
-                    <option value="10:00" title="selected">
-                      10:00 ~ 16:00
-                    </option>
-                    <option value="11:00" title="selected">
-                      11:00 ~ 17:00
-                    </option>
-                    <option value="12:00" title="selected">
-                      12:00 ~ 18:00
-                    </option>
-                    <option value="13:00" title="selected">
-                      13:00 ~ 19:00
-                    </option>
-                    <option value="14:00" title="selected">
-                      14:00 ~ 20:00
-                    </option>
-                    <option value="20시 이후" title="selected">
-                      20시 이후 (OVERNIGHT)
-                    </option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 172px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st02"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-inTime-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-inTime-container"
-                          title="placeholder"
-                          >기본 <em>6</em>시간</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                </dd>
-                <dt><label for="addHour">추가 시간</label></dt>
-                <dd>
-                  <select
-                    name="addHour"
-                    id="addHour"
-                    class="option02 st02 select2-hidden-accessible"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="6">[0]시간</option></select
-                  ><span
-                    class="select2 select2-container select2-container--default"
-                    dir="ltr"
-                    style="width: 67px"
-                    ><span class="selection"
-                      ><span
-                        class="select2-selection select2-selection--single option02 st02"
-                        role="combobox"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        tabindex="0"
-                        aria-labelledby="select2-addHour-container"
-                        ><span
-                          class="select2-selection__rendered"
-                          id="select2-addHour-container"
-                          title="[0]시간"
-                          ><em>0</em>시간</span
-                        ><span
-                          class="select2-selection__arrow"
-                          role="presentation"
-                          ><b role="presentation"></b></span
-                      ></span> </span
-                    ><span class="dropdown-wrapper" aria-hidden="true"></span
-                  ></span>
-                </dd>
-              </dl>
-              <div class="btnC">
-                <button
-                  type="button"
-                  class="btn base st01 em03"
-                  onclick="searchRoomTransit();"
-                >
-                  객실 검색
-                </button>
-              </div>
-              <dl class="info01 em06">
-                <dt>위치</dt>
-                <dd>
-                  제1터미널 4층 (3층 탑승구 11번 맞은편 &amp; 43번 맞은편),
-                  제2터미널 4층 (3층 탑승구 251번 에스컬레이터)
-                </dd>
-              </dl>
-            </fieldset>
-          </form>
-        </div>
-      </section>
+      </div>
+      <div></div>
     </article>
-    <!-- //예약검색 -->
-    <!-- 행사 -->
-    <article class="offers none">
+    <article class="best-seller">
+      <!--1st floor-->
+      <div class="first space-betweens">
+        <div style="width: 18.2%">
+          <img
+            style="padding-bottom: 50px"
+            src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/1540862452726_2.png"
+          />
+        </div>
+        <div class="text-area">
+          <div></div>
+          <h1>BEST SELLER</h1>
+          <p>지금 인기있는 제품들</p>
+        </div>
+        <div style="margin-right: 1.5%">
+          <img
+            src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/20210216_final_retinol-expert-01_bestseller_thumbnail.png"
+          />
+        </div>
+      </div>
+      <!--2nd floor-->
+      <div class="second space-betweens">
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/20210503_final_Bio-Conditioning-Essence_bestseller-img_01_pc.png"
+          />
+        </div>
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/20210525_final_IOPE-A.C.E.-Vitamin-C30_pdp_thumbnail_01_pc_1.png"
+          />
+        </div>
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/20211012_final_SUPER-VITAL-CREAM-BIO-POTENTIAL_thumb_05_pc.jpg"
+          />
+        </div>
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/img-20210129-bestseller-stem_m.png"
+          />
+        </div>
+        <div style="margin-right: 1.5%">
+          <img
+            src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/img_20210812-bestseller-c23-n.png"
+          />
+        </div>
+      </div>
+    </article>
+    <!--메인에 있던 이미지 활용-->
+    <article class="products margins">
+      <div class="wraps">
+        <h1 class="margins">NEW ARRIVALS</h1>
+        <div class="flexs">
+          <!--text area-->
+          <div class="text-area flexs">
+            <h4>Bio Seletinoid 20</h4>
+            <div>
+              <h3>
+                2가지 바이오 성분의 시너지로 <br />노화 속도를 다시 느리게
+              </h3>
+              <p>
+                진화된 바이오 사이언스로 다양한 노화 징후를 개선하고 <br />
+                가속화된 노화속도를 되돌려 <br />
+                스스로 힘이 생긴 잠재력 있는 피부
+              </p>
+              <img
+                src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/c5fae7a39d9e9287bd0fdf02f5d1892e1fbbb195/img/super-vital-cream-bio-potential-img02-bottom_AdobeExpress.gif"
+              />
+            </div>
+          </div>
+          <!--fixed area-->
+          <div class="fixed-area">
+            <img
+              src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1836931c708e3fdc944896125360350c4bdb8671/img/logo.svg"
+            />
+          </div>
+          <!--slide area-->
+          <div>
+            <section>
+              <img
+                src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/d9b490e075a4bff972c505c40b2708eb90a4553f/img/20211022_final_Super-Vital-Cream-Bio-Potential_main-kv_pc_01.jpg"
+              />
+              <div class="margins paddings">
+                <p>슈퍼 바이탈 크림 바이오 포텐셜</p>
+                <h2 class="lefts">
+                  어디에도 휘둘리지 않는 쎈 피부<br />
+                  피부, 포텐을 가지다
+                </h2>
+              </div>
+            </section>
+            <!-- <img
+          src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/d9b490e075a4bff972c505c40b2708eb90a4553f/img/img20210504-kv-bio.jpg"
+        />
+        <img
+          src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/d9b490e075a4bff972c505c40b2708eb90a4553f/img/20220125_wrinkle-report_main-kv_pc.jpg"
+        /> -->
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="iope-lab">
+      <div class="wraps space-betweens">
+        <!--text area-->
+        <div class="text-area">
+          <div class="flexs">
+            <h1>IOPE LAB</h1>
+            <div data-aos="fade-down" class="first-div">
+              <div style="color: white; text-align: center">
+                <h2>모든 과정을 심도 있게</h2>
+                <p class="none">
+                  아이오페는 피부부터 소재, 기술까지<br />
+                  모든 과정에 걸쳐 심도있는 연구를 합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-right" class="second-div">
+            <div style="color: white; text-align: center">
+              <h2>깊이 있는 피부 연구</h2>
+              <p class="none">
+                실제 피부 분석과 차별화된 기술 연구로<br />
+                고효능 성분을 효과적이고 안전하게 피부에<br />
+                전달합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--photo area-->
+        <div class="photo-area">
+          <div data-aos="fade-left" class="third-div">
+            <div style="color: white; text-align: center">
+              <h2>고객 맞춤 솔루션</h2>
+              <p class="none">
+                개인마다 다른 피부 고민과<br />
+                타고난 피부까지 고려한 맞춤 솔루션은<br />
+                피부의 미래를 바꾸어 줍니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="review">
+      <!--slide area-->
+      <section class="space-betweens">
+        <div class="photo-area">
+          <h4>STEMIII AMPOULE</h4>
+        </div>
+        <div class="text-area">
+          <h1 class="lefts" style="font-size: 2.5rem; color: #333333">
+            <strong style="color: #06357a; font-size: 5rem">“</strong><br />원래
+            타고난 피부처럼<br />탄력있고 탱탱해진 느낌이에요
+          </h1>
+          <p>joh*****님의 스템III 앰플 사용후기</p>
+          <button class="white-btn margins">
+            <img
+              src="https://www.walkerhill.com/assets/hub/global/images/ico/ico_arrow03.png"
+            />
+          </button>
+        </div>
+        <div class="review-img-two"></div>
+      </section>
+      <button style="left: 1340px" class="black-btn">◄</button>
+      <button class="black-btn">▶</button>
+      <!--
+        <section>
+            <div><img src="https://www.iope.com/kr/ko/resource/img/renew/main/img-review02.jpg"></div>
+            <h1>“<br>피부 안쪽부터 차오르는<br>느끼믈 받아 아주 만족합니다</h1>
+            <p>bao22*****님의 슈퍼바이탈 크림 리치 사용후기</p>
+            <button>자세히 보기</button>
+        </section>
+-->
+    </article>
+    <article class="brand-story">
+      <div class="wraps flexs align-centers">
+        <div class="margins">
+          <img
+            src="https://www.iope.com/kr/ko/resource/img/renew/main/bg-brandstory_m.jpg"
+          />
+        </div>
+        <div>
+          <p style="border-bottom: 2px solid #06357a">
+            아이오페는 연구를 기반으로 맞춤 솔루션을 제안합니다
+          </p>
+          <h1 class="lefts" style="margin: 20px 0; color: #333333">
+            BRAND STORY
+          </h1>
+          <p>
+            피부부터 소재, 기술까지 <br />모든 과정에 걸쳐 심도 있는 연구를
+            합니다.
+          </p>
+          <button class="white-btn" style="margin: 20px 0">
+            자세히 보기<img
+              src="https://www.walkerhill.com/assets/hub/global/images/ico/ico_arrow03.png"
+            />
+          </button>
+        </div>
+      </div>
+    </article>
+    <!-- <article class="with-iope">
+    <div class="wraps flexs"> -->
+    <!--text area-->
+    <!-- <div>
+        <h1>#withIOPE</h1>
+        <p>#IOPE #IOPEINNOVATOR</p>
+      </div>
+      <div class="option active">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?0)"></div>
+        <div class="label">
+          <div class="icon" style="background: #006466">
+            <i class="fas fa-archive"></i>
+          </div>
+          <div class="info">
+            <div class="main">vulputate dignissim</div>
+            <div class="sub">tincidunt tortor aliquam nulla facilisi</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?1)"></div>
+        <div class="label">
+          <div class="icon" style="background: #065a60">
+            <i class="fas fa-browser"></i>
+          </div>
+          <div class="info">
+            <div class="main">nullam eget</div>
+            <div class="sub">massa tincidunt nunc pulvinar sapien</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?2)"></div>
+        <div class="label">
+          <div class="icon" style="background: #0b525b">
+            <i class="fas fa-bug"></i>
+          </div>
+          <div class="info">
+            <div class="main">velit laoreet</div>
+            <div class="sub">iaculis urna id volutpat lacus</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?3)"></div>
+        <div class="label">
+          <div class="icon" style="background: #144552">
+            <i class="fas fa-coffee"></i>
+          </div>
+          <div class="info">
+            <div class="main">nibh venenatis</div>
+            <div class="sub">tristique risus nec feugiat in</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?4)"></div>
+        <div class="label">
+          <div class="icon" style="background: #1b3a4b">
+            <i class="fas fa-file"></i>
+          </div>
+          <div class="info">
+            <div class="main">dapibus ultrices</div>
+            <div class="sub">urna neque viverra justo nec</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?5)"></div>
+        <div class="label">
+          <div class="icon" style="background: #212f45">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <div class="info">
+            <div class="main">orci ac</div>
+            <div class="sub">posuere lorem ipsum dolor sit</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?6)"></div>
+        <div class="label">
+          <div class="icon" style="background: #272640">
+            <i class="fas fa-window"></i>
+          </div>
+          <div class="info">
+            <div class="main">turpis massa</div>
+            <div class="sub">elit eget gravida cum sociis</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?7)"></div>
+        <div class="label">
+          <div class="icon" style="background: #312244">
+            <i class="fas fa-user-secret"></i>
+          </div>
+          <div class="info">
+            <div class="main">id volutpat</div>
+            <div class="sub">blandit cursus risus at ultrices</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?8)"></div>
+        <div class="label">
+          <div class="icon" style="background: #3e1f47">
+            <i class="fas fa-shield"></i>
+          </div>
+          <div class="info">
+            <div class="main">dies irea</div>
+            <div class="sub">tristique viverra dolor eget</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?9)"></div>
+        <div class="label">
+          <div class="icon" style="background: #4d194d">
+            <i class="fas fa-fire-extinguisher"></i>
+          </div>
+          <div class="info">
+            <div class="main">venenatis ac</div>
+            <div class="sub">urna justo sociis at</div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!--auto slide-->
+    <!-- <div>
       <section>
-        <div class="hgroup">
-          <h2>SMART OFFERS</h2>
-          <p>
-            당신의 소중한 시간이 더 특별하게 빛날 수 있도록, <br />
-            당신만을 위한 추천 상품과 서비스를 확인해 보세요.
-          </p>
-        </div>
-        <ol>
-          <li class="hidden visible animated fadeIn full-visible">
-            <a href="/offers/Overview">
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_offer01.jpg"
-                    alt="#ALL"
-                /></span>
-                <figcaption>
-                  <dl>
-                    <dd>
-                      <h3>#ALL</h3>
-                      <div class="btnC">
-                        <button type="button" class="btn base st02 em02 more">
-                          자세히 보기
-                        </button>
-                      </div>
-                    </dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li class="hidden visible animated fadeIn full-visible">
-            <a href="/offers/Family">
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_offer02.jpg"
-                    alt="#가족"
-                /></span>
-                <figcaption>
-                  <dl>
-                    <dd>
-                      <h3>#가족</h3>
-                      <div class="btnC">
-                        <button type="button" class="btn base st02 em02 more">
-                          자세히 보기
-                        </button>
-                      </div>
-                    </dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li class="hidden visible animated fadeIn full-visible">
-            <a href="/offers/Gourmet">
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_offer03.jpg"
-                    alt="#고메"
-                /></span>
-                <figcaption>
-                  <dl>
-                    <dd>
-                      <h3>#고메</h3>
-                      <div class="btnC">
-                        <button type="button" class="btn base st02 em02 more">
-                          자세히 보기
-                        </button>
-                      </div>
-                    </dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li class="hidden visible animated fadeIn full-visible">
-            <a href="/offers/Activity">
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_offer04.jpg"
-                    alt="#액티비티"
-                /></span>
-                <figcaption>
-                  <dl>
-                    <dd>
-                      <h3>#액티비티</h3>
-                      <div class="btnC">
-                        <button type="button" class="btn base st02 em02 more">
-                          자세히 보기
-                        </button>
-                      </div>
-                    </dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li class="hidden visible animated fadeIn full-visible">
-            <a href="/offers/Friends">
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_offer05.jpg"
-                    alt="#친구"
-                /></span>
-                <figcaption>
-                  <dl>
-                    <dd>
-                      <h3>#친구</h3>
-                      <div class="btnC">
-                        <button type="button" class="btn base st02 em02 more">
-                          자세히 보기
-                        </button>
-                      </div>
-                    </dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li class="hidden visible animated fadeIn full-visible">
-            <a href="/offers/Couple">
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_offer06.jpg"
-                    alt="#연인"
-                /></span>
-                <figcaption>
-                  <dl>
-                    <dd>
-                      <h3>#연인</h3>
-                      <div class="btnC">
-                        <button type="button" class="btn base st02 em02 more">
-                          자세히 보기
-                        </button>
-                      </div>
-                    </dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li class="hidden visible animated fadeIn full-visible">
-            <a href="/SeasonOffers">
-              <figure>
-                <span
-                  ><img src="/upload/image/seasonbase/1887/50501.jpg" alt=""
-                /></span>
-                <figcaption>
-                  <dl>
-                    <dd>
-                      <h3>SEASON OFFERS</h3>
-                      <div class="btnC">
-                        <button type="button" class="btn base st02 em02 more">
-                          바로가기
-                        </button>
-                      </div>
-                    </dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-        </ol>
+        <img src="https://static.pxlecdn.com/photos/517435457/medium/ac1a278e5d416142581a.jpg" />
+        <p>
+          #광고 @iope_official 화장할때마다 피부가 탄력을 잃은 것 같아 고민이
+          많아서 피부 탄력과 리프팅에 큰 관심을 갖고 있었던 요즘! 28일 만에
+          마스크존 부위의 얼굴 각도가 이전보다 나아지는 효과를 증명하는 리프팅
+          앰플이 있다해서 바로 사용해봤어요!
+        </p>
       </section>
-    </article>
-    <!-- //행사 -->
-    <!-- 객실 -->
-    <article id="tabStay" class="stays tabArea none">
-      <h2>
-        <span><em>where to</em> STAY</span>
-      </h2>
-      <h3 class="on">
-        <a href="#stayVista" class="tab">VISTA WALKERHILL SEOUL</a>
-      </h3>
-      <div id="stayVista" class="photo tabCont">
-        <div class="bx-wrapper" style="max-width: 2820px; margin: 0px auto">
-          <div
-            class="bx-viewport"
-            style="
-              width: 100%;
-              overflow: hidden;
-              position: relative;
-              height: 436px;
-            "
-          >
-            <ol
-              class="slide"
-              style="
-                width: 715%;
-                position: relative;
-                transition-duration: 0s;
-                transform: translate3d(-3480px, 0px, 0px);
-              "
-            >
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/vistawalkerhillseoul/room/">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayVista03.jpg"
-                        alt="비스타 객실"
-                    /></span>
-                    <figcaption>비스타 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/vistawalkerhillseoul/room/">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayVista04.jpg"
-                        alt="비스타 객실"
-                    /></span>
-                    <figcaption>비스타 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-              >
-                <a href="/vistawalkerhillseoul/room/">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayVista05.jpg"
-                        alt="비스타 객실"
-                    /></span>
-                    <figcaption>비스타 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="active"
-              >
-                <a href="/vistawalkerhillseoul/room/">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayVista01.jpg"
-                        alt="비스타 객실"
-                    /></span>
-                    <figcaption>비스타 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-              >
-                <a href="/vistawalkerhillseoul/room/">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayVista02.jpg"
-                        alt="비스타 객실"
-                    /></span>
-                    <figcaption>비스타 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-              >
-                <a href="/vistawalkerhillseoul/room/">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayVista03.jpg"
-                        alt="비스타 객실"
-                    /></span>
-                    <figcaption>비스타 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-              >
-                <a href="/vistawalkerhillseoul/room/">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayVista04.jpg"
-                        alt="비스타 객실"
-                    /></span>
-                    <figcaption>비스타 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/vistawalkerhillseoul/room/">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayVista05.jpg"
-                        alt="비스타 객실"
-                    /></span>
-                    <figcaption>비스타 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/vistawalkerhillseoul/room/">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayVista01.jpg"
-                        alt="비스타 객실"
-                    /></span>
-                    <figcaption>비스타 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-            </ol>
-          </div>
-          <div class="bx-controls bx-has-controls-direction">
-            <div></div>
-            <div class="bx-controls-direction">
-              <div></div>
-              <a class="bx-prev" href="">Prev</a
-              ><a class="bx-next" href="">Next</a>
-            </div>
-          </div>
+    </div> -->
+    <!-- </article> -->
+    <aside>
+      <!--top fix-->
+      <div><a href="#" class="top">↥</a></div>
+    </aside>
+    <footer>
+      <div class="wraps space-betweens align-centers">
+        <!--logo area-->
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1836931c708e3fdc944896125360350c4bdb8671/img/logo.svg"
+          />
         </div>
-        <hgroup class="page1">
-          <h4>VISTA WALKERHILL SEOUL</h4>
-          <h5>생동감 넘치는 색다른 여행의 시작</h5>
-        </hgroup>
-        <div class="offer">
-          <h5>TOP OFFERS</h5>
-          <a href="/vistawalkerhillseoul/Package/8210">
-            <figure>
-              <figcaption>
-                <h6>AUTUMN ESCAPE</h6>
-                <p class="" style="overflow-wrap: break-word">
-                  스타일리시한 가을 일상 탈출! Re:BAR에서 즐기는 시원한 생맥주
-                  또는 웰니스 사우나로 활력 넘치는 휴가를...
-                </p>
-                <dl>
-                  <dt class="blind">기간</dt>
-                  <dd>2022.09.01 ~ 2022.11.30</dd>
-                  <dt class="blind">가격</dt>
-                  <dd>KRW 250,000 ~</dd>
-                </dl>
-              </figcaption>
-              <span class="autoImg"
-                ><img
-                  src="/upload/image/offers/8210/50418.jpg"
-                  alt=""
-                  style="
-                    width: auto;
-                    height: 100%;
-                    margin-top: 0px;
-                    margin-left: 0px;
-                  "
-              /></span>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <h3><a href="#stayGrand" class="tab">GRAND WALKERHILL SEOUL</a></h3>
-      <div id="stayGrand" class="photo tabCont blind">
-        <div class="bx-wrapper" style="max-width: 2820px; margin: 0px auto">
-          <div
-            class="bx-viewport"
-            style="
-              width: 100%;
-              overflow: hidden;
-              position: relative;
-              height: 436px;
-            "
-          >
-            <ol
-              class="slide"
-              style="
-                width: 715%;
-                position: relative;
-                transition-duration: 0s;
-                transform: translate3d(-3480px, 0px, 0px);
-              "
-            >
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/grandwalkerhillseoul/room">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayGrand03.jpg"
-                        alt="그랜드 객실"
-                    /></span>
-                    <figcaption>그랜드 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/grandwalkerhillseoul/room">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayGrand04.jpg"
-                        alt="그랜드 객실"
-                    /></span>
-                    <figcaption>그랜드 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-              >
-                <a href="/grandwalkerhillseoul/room">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayGrand05.jpg"
-                        alt="그랜드 객실"
-                    /></span>
-                    <figcaption>그랜드 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="active"
-              >
-                <a href="/grandwalkerhillseoul/room">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayGrand01.jpg"
-                        alt="그랜드 객실"
-                    /></span>
-                    <figcaption>그랜드 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-              >
-                <a href="/grandwalkerhillseoul/room">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayGrand02.jpg"
-                        alt="그랜드 객실"
-                    /></span>
-                    <figcaption>그랜드 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-              >
-                <a href="/grandwalkerhillseoul/room">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayGrand03.jpg"
-                        alt="그랜드 객실"
-                    /></span>
-                    <figcaption>그랜드 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-              >
-                <a href="/grandwalkerhillseoul/room">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayGrand04.jpg"
-                        alt="그랜드 객실"
-                    /></span>
-                    <figcaption>그랜드 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/grandwalkerhillseoul/room">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayGrand05.jpg"
-                        alt="그랜드 객실"
-                    /></span>
-                    <figcaption>그랜드 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/grandwalkerhillseoul/room">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayGrand01.jpg"
-                        alt="그랜드 객실"
-                    /></span>
-                    <figcaption>그랜드 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-            </ol>
-          </div>
-          <div class="bx-controls bx-has-controls-direction">
-            <div></div>
-            <div class="bx-controls-direction">
-              <div></div>
-              <a class="bx-prev" href="">Prev</a
-              ><a class="bx-next" href="">Next</a>
-            </div>
-          </div>
-        </div>
-        <hgroup class="page1">
-          <h4>GRAND WALKERHILL SEOUL</h4>
-          <h5>당신의 감각을 깨우는 행복한 경험</h5>
-        </hgroup>
-        <div class="offer">
-          <h5>TOP OFFERS</h5>
-          <a href="/grandwalkerhillseoul/Package/8208">
-            <figure>
-              <figcaption>
-                <h6>Fall in Fall</h6>
-                <p style="overflow-wrap: break-word">
-                  아름다운 단풍으로 물든 워커힐에서 여유롭게 가을을 느껴보세요.
-                </p>
-                <dl>
-                  <dt class="blind">기간</dt>
-                  <dd>2022.09.01 ~ 2022.11.30</dd>
-                  <dt class="blind">가격</dt>
-                  <dd>KRW 226,000 ~</dd>
-                </dl>
-              </figcaption>
-              <span class="autoImg"
-                ><img
-                  src="/upload/image/offers/8208/50342.jpg"
-                  alt=""
-                  style="
-                    width: auto;
-                    height: 100%;
-                    margin-top: 0px;
-                    margin-left: 0px;
-                  "
-              /></span>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <h3><a href="#stayDouglas" class="tab">DOUGLAS HOUSE</a></h3>
-      <div id="stayDouglas" class="photo tabCont blind">
-        <div class="bx-wrapper" style="max-width: 2820px; margin: 0px auto">
-          <div
-            class="bx-viewport"
-            style="
-              width: 100%;
-              overflow: hidden;
-              position: relative;
-              height: 436px;
-            "
-          >
-            <ol
-              class="slide"
-              style="
-                width: 515%;
-                position: relative;
-                transition-duration: 0s;
-                transform: translate3d(-3480px, 0px, 0px);
-              "
-            >
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/grandwalkerhillseoul/douglas/Intro">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayDouglas01.jpg"
-                        alt="더글라스 객실"
-                    /></span>
-                    <figcaption>더글라스 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/grandwalkerhillseoul/douglas/Intro">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayDouglas02.jpg"
-                        alt="더글라스 객실"
-                    /></span>
-                    <figcaption>더글라스 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-              >
-                <a href="/grandwalkerhillseoul/douglas/Intro">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayDouglas03.jpg"
-                        alt="더글라스 객실"
-                    /></span>
-                    <figcaption>더글라스 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="active"
-              >
-                <a href="/grandwalkerhillseoul/douglas/Intro">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayDouglas01.jpg"
-                        alt="더글라스 객실"
-                    /></span>
-                    <figcaption>더글라스 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-              >
-                <a href="/grandwalkerhillseoul/douglas/Intro">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayDouglas02.jpg"
-                        alt="더글라스 객실"
-                    /></span>
-                    <figcaption>더글라스 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/grandwalkerhillseoul/douglas/Intro">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayDouglas03.jpg"
-                        alt="더글라스 객실"
-                    /></span>
-                    <figcaption>더글라스 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li
-                style="
-                  float: left;
-                  list-style: none;
-                  position: relative;
-                  width: 1080px;
-                  margin-right: 660px;
-                "
-                class="bx-clone"
-              >
-                <a href="/grandwalkerhillseoul/douglas/Intro">
-                  <figure>
-                    <span
-                      ><img
-                        src="/assets/hub/global/images/etc/idx_stayDouglas01.jpg"
-                        alt="더글라스 객실"
-                    /></span>
-                    <figcaption>더글라스 객실</figcaption>
-                  </figure>
-                </a>
-              </li>
-            </ol>
-          </div>
-          <div class="bx-controls bx-has-controls-direction">
-            <div></div>
-            <div class="bx-controls-direction">
-              <div></div>
-              <a class="bx-prev" href="">Prev</a
-              ><a class="bx-next" href="">Next</a>
-            </div>
-          </div>
-        </div>
-        <hgroup class="page1">
-          <h4>DOUGLAS HOUSE</h4>
-          <h5>나를 위한 조용한 숲 속 휴식처</h5>
-        </hgroup>
-        <div class="offer">
-          <h5>TOP OFFERS</h5>
-          <a href="/grandwalkerhillseoul/Package/8209">
-            <figure>
-              <figcaption>
-                <h6>In the Fall @ 더글라스</h6>
-                <p style="overflow-wrap: break-word">
-                  알록달록 낙엽이 우거진 워커힐 숲 속에 위치한 나만의 아지트,
-                  더글라스 하우스로 가을 여행 떠나보세요.
-                </p>
-                <dl>
-                  <dt class="blind">기간</dt>
-                  <dd>2022.09.01 ~ 2022.11.30</dd>
-                  <dt class="blind">가격</dt>
-                  <dd>KRW 275,000 ~</dd>
-                </dl>
-              </figcaption>
-              <span class="autoImg"
-                ><img
-                  src="/upload/image/offers/8209/50351.jpg"
-                  alt=""
-                  style="
-                    width: auto;
-                    height: 100%;
-                    margin-top: 0px;
-                    margin-left: 0px;
-                  "
-              /></span>
-            </figure>
-          </a>
-        </div>
-      </div>
-    </article>
-    <!-- //객실 -->
-    <!-- 식당 -->
-    <article class="eat photo none">
-      <div class="hgroup">
-        <h2><em>where to</em> EAT</h2>
-        <p>
-          월드 클래스 셰프들이 정성스럽게 <br />
-          준비한 고메 푸드들과 함께 맛있는 <br />
-          여행을 시작해 보시기 바랍니다.
-        </p>
-      </div>
-      <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto">
-        <div
-          class="bx-viewport"
-          style="
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            height: 999px;
-          "
-        >
-          <ol class="slide" style="width: auto; position: relative">
-            <li
-              style="
-                float: none;
-                list-style: none;
-                position: absolute;
-                width: 1640px;
-                z-index: 50;
-                display: block;
-              "
-            >
-              <ol class="pic st01 em01">
-                <li>
-                  <a href="/book/Dining">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatWalkerhill.jpg"
-                          alt="WALKERHILL RESTAURANT"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>
-                              WALKERHILL<br />
-                              RESTAURANT
-                            </h3>
-                            <h4>다이닝 검색/예약</h4>
-                            <p>
-                              워커힐만의 맛과 멋을 선사하는 <br />
-                              다양한 레스토랑들을 만나보세요.
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <li>
-                  <a href="/store/ProductList?cIdx=3">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatOnlineStore.jpg"
-                          alt="WALKERHILL ONLINE STORE"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>WALKERHILL <br />ONLINE STORE</h3>
-                            <h4>온라인 스토어</h4>
-                            <p>
-                              워커힐 호텔앤리조트의 프리미엄 상품들을 온라인
-                              스토어에서 <br />편리하게 이용해보세요.
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <li>
-                  <a href="/vistawalkerhillseoul/dining/DELVINO">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatDelVino.jpg"
-                          alt="DEL VINO"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>
-                              <img
-                                src="/assets/hub/global/images/txt/h3_delVino01_off.png"
-                                alt="DEL VINO"
-                              />
-                            </h3>
-                            <h4>델비노</h4>
-                            <p>
-                              한강 전망과 캐주얼하고 편안한 분위기가 돋보이는
-                              <br />
-                              모던 이탈리안 퀴진
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-              </ol>
-            </li>
-            <li
-              style="
-                float: none;
-                list-style: none;
-                position: absolute;
-                width: 1640px;
-                z-index: 0;
-                display: none;
-              "
-            >
-              <ol class="pic st01 em01">
-                <li>
-                  <a href="/grandwalkerhillseoul/dining/LePassage">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatLePassage.jpg"
-                          alt="LE PASSAGE"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>
-                              <img
-                                src="/assets/hub/global/images/txt/h3_lePassage01_off.png"
-                                alt="LE PASSAGE"
-                              />
-                            </h3>
-                            <h4>르 파사쥬</h4>
-                            <p>
-                              오븐에서 갓 구워낸 베이커리와 <br />
-                              최상급의 델리 제품, 폭넓은 스케일의 와인을 <br />
-                              만나볼 수 있는 프리미엄 고메 스토어
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <li>
-                  <a href="/vistawalkerhillseoul/dining/PizzaHill">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatPizzaHill.jpg"
-                          alt="PIZZA HILL"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>
-                              <img
-                                src="/assets/hub/global/images/txt/h3_pizzaHill01_off.png"
-                                alt="PIZZA HILL"
-                              />
-                            </h3>
-                            <h4>피자힐</h4>
-                            <p>
-                              오븐에서 갓 구운 피자와 파스타를 선보이는 <br />
-                              이탈리안 정통 피자 레스토랑
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <li>
-                  <a href="/vistawalkerhillseoul/dining/Myongwolgwan">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatMyongwolgwan.jpg"
-                          alt="명월관"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>
-                              <img
-                                src="/assets/hub/global/images/txt/h3_myongwolgwan01_off.png"
-                                alt="명월관"
-                              />
-                            </h3>
-                            <h4>명월관</h4>
-                            <p>
-                              최상의 한우와 최고급 참숯만을 사용, <br />
-                              최고의 맛을 선사하는 숯불구이 전문점
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-              </ol>
-            </li>
-            <li
-              style="
-                float: none;
-                list-style: none;
-                position: absolute;
-                width: 1640px;
-                z-index: 0;
-                display: none;
-              "
-            >
-              <ol class="pic st01 em01">
-                <li>
-                  <a href="/grandwalkerhillseoul/dining/ThePavilion">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatThePavilion.jpg"
-                          alt="The Pavilion"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>
-                              <img
-                                src="/assets/hub/global/images/txt/h3_thePavilion01_off.png"
-                                alt="The Pavilion"
-                              />
-                            </h3>
-                            <h4>더파빌리온</h4>
-                            <p>
-                              프리미엄 티와 커피, 생과일 주스, 건강 음료, <br />
-                              디저트 등을 제공하는 카페
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <li>
-                  <a href="/vistawalkerhillseoul/dining/MOEGI">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatMoegi.jpg"
-                          alt="MOEGI"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>
-                              <img
-                                src="/assets/hub/global/images/txt/h3_moegi01_off.png"
-                                alt="MOEGI"
-                              />
-                            </h3>
-                            <h4>모에기</h4>
-                            <p>
-                              스시, 데판야끼, 가이세키 요리 등을 <br />
-                              현대적 감각으로 재해석한 정통 일식당
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <li>
-                  <a href="/grandwalkerhillseoul/dining/TheBuffet">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatTheBuffet.jpg"
-                          alt="WALKERHILL THE BUFFET"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>
-                              <img
-                                src="/assets/hub/global/images/txt/h3_theBuffet01_off.png"
-                                alt="WALKERHILL THE BUFFET"
-                              />
-                            </h3>
-                            <h4>더뷔페</h4>
-                            <p>
-                              제철 식재료를 활용하여 다양한 건강식 메뉴를
-                              선보이는 <br />
-                              뷔페 레스토랑
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-              </ol>
-            </li>
-            <li
-              style="
-                float: none;
-                list-style: none;
-                position: absolute;
-                width: 1640px;
-                z-index: 0;
-                display: none;
-              "
-            >
-              <ol class="pic st01 em01">
-                <li>
-                  <a href="/vistawalkerhillseoul/dining/ReBAR">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatReBar.jpg"
-                          alt="Re: BAR"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>
-                              <img
-                                src="/assets/hub/global/images/txt/h3_reBar01_off.png"
-                                alt="Re: BAR"
-                              />
-                            </h3>
-                            <h4>리:바</h4>
-                            <p>
-                              전문 바텐더가 선보이는 다양한 칵테일과 <br />
-                              주류가 준비된 소셜 라운지 바
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <li>
-                  <a href="/grandwalkerhillseoul/dining/Geumryong">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatGeumryong.jpg"
-                          alt="金龍 GEUMRYONG"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>
-                              <img
-                                src="/assets/hub/global/images/txt/h3_geumryong01_off.png"
-                                alt="金龍 GEUMRYONG"
-                              />
-                            </h3>
-                            <h4>금룡</h4>
-                            <p>
-                              중국 4대 요리이자 미각의 르네상스로 불리는 <br />
-                              광둥 요리 기반의 중식당
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-                <li>
-                  <a href="/grandwalkerhillseoul/dining/Ondal">
-                    <figure>
-                      <span
-                        ><img
-                          src="/assets/hub/global/images/etc/idx_eatOndal.jpg"
-                          alt="온달"
-                      /></span>
-                      <figcaption>
-                        <div class="table">
-                          <div>
-                            <h3>
-                              <img
-                                src="/assets/hub/global/images/txt/h3_ondal01_off.png"
-                                alt="온달"
-                              />
-                            </h3>
-                            <h4>온달</h4>
-                            <p>
-                              조선시대 사대부 요리와 궁중음식의 찬품단자를
-                              <br />
-                              재해석한 워커힐 대표 한식당
-                            </p>
-                            <div class="btnC">
-                              <button
-                                type="button"
-                                class="btn base st02 em02 more"
-                              >
-                                바로가기
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </li>
-              </ol>
-            </li>
-          </ol>
-        </div>
-        <div class="bx-controls bx-has-controls-direction">
-          <div></div>
-          <div class="bx-controls-direction">
-            <div></div>
-            <a class="bx-prev" href="">Prev</a
-            ><a class="bx-next" href="">Next</a>
-          </div>
-        </div>
-      </div>
-    </article>
-    <!-- //식당 -->
-    <!-- 시설 -->
-    <article class="play photo none">
-      <h2><em>what to</em> DO</h2>
-      <div class="bx-wrapper" style="max-width: 2970px; margin: 0px auto">
-        <div
-          class="bx-viewport"
-          style="
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            height: 468px;
-          "
-        >
-          <ol
-            class="slide"
-            style="
-              width: 815%;
-              position: relative;
-              transition-duration: 0s;
-              transform: translate3d(-2636px, 0px, 0px);
-            "
-          >
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 1410px;
-                margin-right: 150px;
-              "
-              class="bx-clone"
-            >
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_playCookMix.jpg"
-                    alt="쿡앤믹스"
-                /></span>
-                <figcaption>
-                  <h3><em>02</em>WALKERHILL PROGRAM</h3>
-                  <h4>쿡앤믹스</h4>
-                  <p>
-                    전문가들의 노하우를 배워보는 맛있는 여행! <br />
-                    요리와 칵테일 등을 배워보고, 맛있게 즐겨보세요!
-                  </p>
-                  <div class="btnL">
-                    <a
-                      href="/grandwalkerhillseoul/douglas/Facility#kitchen"
-                      class="btn base st03 more"
-                      >바로가기</a
-                    >
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 1410px;
-                margin-right: 150px;
-              "
-              class="bx-clone"
-            >
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_playWalkee.jpg"
-                    alt="워키 프로그램"
-                /></span>
-                <figcaption>
-                  <h3><em>02</em>WALKERHILL PROGRAM</h3>
-                  <h4>워키 프로그램</h4>
-                  <p>
-                    워커힐 레저 전문가, 워키(Walkerhill Exciting Explorer)와
-                    함께<br />
-                    다양한 액티비티 프로그램을 즐겨보세요!
-                  </p>
-                  <div class="btnL">
-                    <a
-                      href="/grandwalkerhillseoul/activity/Walkee"
-                      class="btn base st03 em10 more"
-                      >바로가기</a
-                    >
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 1410px;
-                margin-right: 150px;
-              "
-            >
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_playForestPark.jpg"
-                    alt="포레스트 파크"
-                /></span>
-                <figcaption>
-                  <h3><em>01</em>WALKERHILL PLACE</h3>
-                  <h4>포레스트 파크</h4>
-                  <p>
-                    편안한 휴식을 위한 텐트, 친환경 놀이 공간, <br />워키
-                    프로그램 등이 함께하는 프라이빗 피크닉 공간, <br />포레스트
-                    파크에서 도심 속 낭만과 힐링을 즐겨보세요.
-                  </p>
-                  <div class="btnL">
-                    <a
-                      href="/grandwalkerhillseoul/activity/Experience"
-                      class="btn base st03 more"
-                      >바로가기</a
-                    >
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 1410px;
-                margin-right: 150px;
-              "
-            >
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_playLibrary.jpg"
-                    alt="워커힐 라이브러리"
-                /></span>
-                <figcaption>
-                  <h3><em>01</em>WALKERHILL PLACE</h3>
-                  <h4>워커힐 라이브러리</h4>
-                  <p>편안한 분위기에서 독서를 즐기며 여유를 느껴보세요.</p>
-                  <div class="btnL">
-                    <a
-                      href="/grandwalkerhillseoul/activity/Experience#Library"
-                      class="btn base st03 more"
-                      >바로가기</a
-                    >
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 1410px;
-                margin-right: 150px;
-              "
-            >
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_playWellness.jpg"
-                    alt="웰니스 프로그램"
-                /></span>
-                <figcaption>
-                  <h3><em>02</em>WALKERHILL PROGRAM</h3>
-                  <h4>웰니스 프로그램</h4>
-                  <p>
-                    차별화된 전문 시설, 1:1 맞춤형 컨설팅과 체계적인<br />
-                    건강관리 솔루션이 당신의 삶에 활력을 되찾아 드립니다.
-                  </p>
-                </figcaption>
-              </figure>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 1410px;
-                margin-right: 150px;
-              "
-            >
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_playSkyard.jpg"
-                    alt="SKYARD"
-                /></span>
-                <figcaption>
-                  <h3><em>01</em>WALKERHILL PLACE</h3>
-                  <h4>SKYARD</h4>
-                  <p>
-                    야외 루프탑 가든인 'SKYARD'에서 아름다운 한강의 전경을<br />
-                    감상하며 자연과 하나되는 놀라운 감동을 느껴보세요.
-                  </p>
-                  <div class="btnL">
-                    <a
-                      href="/vistawalkerhillseoul/facility/Experience"
-                      class="btn base st03 more"
-                      >바로가기</a
-                    >
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 1410px;
-                margin-right: 150px;
-              "
-            >
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_playCookMix.jpg"
-                    alt="쿡앤믹스"
-                /></span>
-                <figcaption>
-                  <h3><em>02</em>WALKERHILL PROGRAM</h3>
-                  <h4>쿡앤믹스</h4>
-                  <p>
-                    전문가들의 노하우를 배워보는 맛있는 여행!<br />
-                    요리와 칵테일 등을 배워보고, 맛있게 즐겨보세요!
-                  </p>
-                  <div class="btnL">
-                    <a
-                      href="/grandwalkerhillseoul/douglas/Facility#kitchen"
-                      class="btn base st03 more"
-                      >바로가기</a
-                    >
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 1410px;
-                margin-right: 150px;
-              "
-            >
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_playWalkee.jpg"
-                    alt="워키 프로그램"
-                /></span>
-                <figcaption>
-                  <h3><em>02</em>WALKERHILL PROGRAM</h3>
-                  <h4>워키 프로그램</h4>
-                  <p>
-                    워커힐 레저 전문가, 워키(Walkerhill Exciting Explorer)와
-                    함께<br />
-                    다양한 액티비티 프로그램을 즐겨보세요!
-                  </p>
-                  <div class="btnL">
-                    <a
-                      href="/grandwalkerhillseoul/activity/Walkee"
-                      class="btn base st03 em10 more"
-                      >바로가기</a
-                    >
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 1410px;
-                margin-right: 150px;
-              "
-              class="bx-clone"
-            >
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_playForestPark.jpg"
-                    alt="포레스트 파크"
-                /></span>
-                <figcaption>
-                  <h3><em>01</em>WALKERHILL PLACE</h3>
-                  <h4>포레스트 파크</h4>
-                  <p>
-                    편안한 휴식을 위한 텐트, 친환경 놀이 공간, <br />워키
-                    프로그램 등이 함께하는 프라이빗 피크닉 공간, <br />포레스트
-                    파크에서 도심 속 낭만과 힐링을 즐겨보세요.
-                  </p>
-                  <div class="btnL">
-                    <a
-                      href="/grandwalkerhillseoul/activity/Experience"
-                      class="btn base st03 more"
-                      >바로가기</a
-                    >
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 1410px;
-                margin-right: 150px;
-              "
-              class="bx-clone"
-            >
-              <figure>
-                <span
-                  ><img
-                    src="/assets/hub/global/images/etc/idx_playLibrary.jpg"
-                    alt="워커힐 라이브러리"
-                /></span>
-                <figcaption>
-                  <h3><em>01</em>WALKERHILL PLACE</h3>
-                  <h4>워커힐 라이브러리</h4>
-                  <p>편안한 분위기에서 독서를 즐기며 여유를 느껴보세요.</p>
-                  <div class="btnL">
-                    <a
-                      href="/grandwalkerhillseoul/activity/Experience#Library"
-                      class="btn base st03 more"
-                      >바로가기</a
-                    >
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-          </ol>
-        </div>
-        <div class="bx-controls bx-has-controls-direction">
-          <div></div>
-          <div class="bx-controls-direction">
-            <div></div>
-            <a class="bx-prev" href="">Prev</a
-            ><a class="bx-next" href="">Next</a>
-          </div>
-        </div>
-      </div>
-    </article>
-    <!-- //시설 -->
-    <!-- 와인스토어 배너-->
-    <article class="wineStore none">
-      <div>
-        <span>Wines inspired by you</span>
-        <h2>WINE SELECTION</h2>
-        <p>
-          워커힐 소믈리에가 추천하는 베스트 와인 리스트를 <br />지금 확인해
-          보세요.
-        </p>
-        <div class="btnL">
-          <a
-            href="/winestore/"
-            target="_blank"
-            class="btn base st02 em02 more"
-            onclick=""
-            >와인스토어 바로가기</a
-          >
-        </div>
-      </div>
-    </article>
-    <!-- 와인스토어 배너//-->
-    <!-- 이야기 -->
-    <article class="story none">
-      <div class="hgroup">
-        <h2 class="blt line01">
-          WALKERHILL<br />
-          STORY
-        </h2>
-        <p>
-          워커힐 호텔앤리조트와 여행에 관한<br />
-          최신의 소식과 자세한 정보들을 확인해 보세요.
-        </p>
-      </div>
-      <div class="bx-wrapper" style="max-width: 1120px">
-        <div
-          class="bx-viewport"
-          style="
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            height: 604px;
-          "
-        >
-          <ol
-            class="slide"
-            style="
-              width: 715%;
-              position: relative;
-              transition-duration: 0.5s;
-              transform: translate3d(-1240px, 0px, 0px);
-            "
-          >
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 360px;
-                margin-right: 20px;
-              "
-              class="bx-clone"
-            >
-              <a
-                id="blogLink3"
-                href="https://www.walkerhillstory.com/22fallinpavilion/"
-                target="_blank"
-              >
-                <figure>
-                  <span class="autoImg"
-                    ><img
-                      id="blogImg3"
-                      src="https://www.walkerhillstory.com/wp-content/uploads/2022/09/CR6_4481-1024x683.jpg"
-                      alt="워커힐 키즈 액티비티 추천 BEST 5"
-                      style="
-                        width: auto;
-                        height: 100%;
-                        margin-top: 0px;
-                        margin-left: -135px;
-                      "
-                  /></span>
-                  <figcaption style="overflow-wrap: break-word" class="">
-                    <h3 id="blogTitle3" style="display: block">
-                      공주들의 달콤한 가을 소풍 Fall in Pavilion
-                    </h3>
-                    <p id="blogDescription3" style="display: block">
-                      가을의 푸른 하늘과, 알록달록한 단풍을 보고 있으면 눈도
-                      마음도 들뜨기 마련이죠. 들뜬 마음에 달콤한 디저트까지
-                      함께라면 기분 좋은 여유를 누릴 수...
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 360px;
-                margin-right: 20px;
-              "
-              class="bx-clone"
-            >
-              <a
-                id="blogLink4"
-                href="https://www.walkerhillstory.com/22cutting-edge/"
-                target="_blank"
-              >
-                <figure>
-                  <span class="autoImg"
-                    ><img
-                      id="blogImg4"
-                      src="https://www.walkerhillstory.com/wp-content/uploads/2022/09/KakaoTalk_20220921_170041562-1024x683.jpg"
-                      alt="워커힐 키즈 액티비티 추천 BEST 5"
-                      style="
-                        width: auto;
-                        height: 100%;
-                        margin-top: 0px;
-                        margin-left: -135px;
-                      "
-                  /></span>
-                  <figcaption style="overflow-wrap: break-word" class="">
-                    <h3 id="blogTitle4" style="display: block">
-                      전시를 통해 일상을 돌아보는 시간, 데이비드 걸스타인 X 에덴
-                      박 CUTTING-EDGE
-                    </h3>
-                    <p id="blogDescription4" style="display: block">
-                      “전시 보러 호텔 간다”라는 말을 들어보셨나요...
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 360px;
-                margin-right: 20px;
-              "
-              class="bx-clone"
-            >
-              <a
-                id="blogLink5"
-                href="https://www.walkerhillstory.com/22autumn/"
-                target="_blank"
-              >
-                <figure>
-                  <span class="autoImg"
-                    ><img
-                      id="blogImg5"
-                      src="https://www.walkerhillstory.com/wp-content/uploads/2022/09/CR6_4042-1024x683.jpg"
-                      alt="워커힐 키즈 액티비티 추천 BEST 5"
-                      style="
-                        width: auto;
-                        height: 100%;
-                        margin-top: 0px;
-                        margin-left: -135px;
-                      "
-                  /></span>
-                  <figcaption style="overflow-wrap: break-word" class="">
-                    <h3 id="blogTitle5" style="display: block">
-                      도심 속에서 즐기는 가을 여행, 워커힐이 제안하는 가을
-                      패키지 3종
-                    </h3>
-                    <p id="blogDescription5" style="display: block">
-                      시원한 바람과 푸른색의 하늘을 보면, 가을이 물씬 다가왔다는
-                      걸 인지할 수 있죠. 선선해진 날씨 덕인지 문득 가을 여행을
-                      떠나고 싶으실 겁니다. 이에...
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 360px;
-                margin-right: 20px;
-              "
-            >
-              <a
-                id="blogLink1"
-                href="https://www.walkerhillstory.com/22autumn-panorama/"
-                target="_blank"
-              >
-                <figure>
-                  <span class="autoImg"
-                    ><img
-                      id="blogImg1"
-                      src="https://www.walkerhillstory.com/wp-content/uploads/2022/10/0-1024x683.jpg"
-                      alt="워커힐 키즈 액티비티 추천 BEST 5"
-                      style="
-                        width: auto;
-                        height: 100%;
-                        margin-top: 0px;
-                        margin-left: -135px;
-                      "
-                  /></span>
-                  <figcaption style="overflow-wrap: break-word" class="">
-                    <h3 id="blogTitle1" style="display: block">
-                      단풍 명소 워커힐에서 만나는 도심 속 가을 나들이
-                    </h3>
-                    <p id="blogDescription1" style="display: block">
-                      맑은 공기를 마시며 형형색색의 단풍을 한눈에 볼 수 있는
-                      계절, 가을이 성큼 다가왔습니다. 도심에서 벗어나 아름답게
-                      물든 단풍을 보러 떠나는 분들이...
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 360px;
-                margin-right: 20px;
-              "
-            >
-              <a
-                id="blogLink2"
-                href="https://www.walkerhillstory.com/22ncsi-top-honor/"
-                target="_blank"
-              >
-                <figure>
-                  <span class="autoImg"
-                    ><img
-                      id="blogImg2"
-                      src="https://www.walkerhillstory.com/wp-content/uploads/2022/09/50737-1024x523.jpg"
-                      alt="워커힐 키즈 액티비티 추천 BEST 5"
-                      style="
-                        width: auto;
-                        height: 100%;
-                        margin-top: 0px;
-                        margin-left: -231px;
-                      "
-                  /></span>
-                  <figcaption style="overflow-wrap: break-word" class="">
-                    <h3 id="blogTitle2" style="display: block">
-                      고객에게 최고의 서비스로 보답하는 워커힐 호텔앤리조트,
-                      2022년 국가고객만족도(NCSI) 조사 1위 수상
-                    </h3>
-                    <p id="blogDescription2" style="display: block">
-                      도심 속 자연의 편안한 휴식을 누릴 수 있는 워커힐...
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 360px;
-                margin-right: 20px;
-              "
-            >
-              <a
-                id="blogLink3"
-                href="https://www.walkerhillstory.com/22fallinpavilion/"
-                target="_blank"
-              >
-                <figure>
-                  <span class="autoImg"
-                    ><img
-                      id="blogImg3"
-                      src="https://www.walkerhillstory.com/wp-content/uploads/2022/09/CR6_4481-1024x683.jpg"
-                      alt="워커힐 키즈 액티비티 추천 BEST 5"
-                      style="
-                        width: auto;
-                        height: 100%;
-                        margin-top: 0px;
-                        margin-left: -135px;
-                      "
-                  /></span>
-                  <figcaption style="overflow-wrap: break-word" class="">
-                    <h3 id="blogTitle3" style="display: block">
-                      공주들의 달콤한 가을 소풍 Fall in Pavilion
-                    </h3>
-                    <p id="blogDescription3" style="display: block">
-                      가을의 푸른 하늘과, 알록달록한 단풍을 보고 있으면 눈도
-                      마음도 들뜨기 마련이죠. 들뜬 마음에 달콤한 디저트까지
-                      함께라면 기분 좋은 여유를 누릴 수...
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 360px;
-                margin-right: 20px;
-              "
-            >
-              <a
-                id="blogLink4"
-                href="https://www.walkerhillstory.com/22cutting-edge/"
-                target="_blank"
-              >
-                <figure>
-                  <span class="autoImg"
-                    ><img
-                      id="blogImg4"
-                      src="https://www.walkerhillstory.com/wp-content/uploads/2022/09/KakaoTalk_20220921_170041562-1024x683.jpg"
-                      alt="워커힐 키즈 액티비티 추천 BEST 5"
-                      style="
-                        width: auto;
-                        height: 100%;
-                        margin-top: 0px;
-                        margin-left: -135px;
-                      "
-                  /></span>
-                  <figcaption style="overflow-wrap: break-word" class="">
-                    <h3 id="blogTitle4" style="display: block">
-                      전시를 통해 일상을 돌아보는 시간, 데이비드 걸스타인 X 에덴
-                      박 CUTTING-EDGE
-                    </h3>
-                    <p id="blogDescription4" style="display: block">
-                      “전시 보러 호텔 간다”라는 말을 들어보셨나요...
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 360px;
-                margin-right: 20px;
-              "
-            >
-              <a
-                id="blogLink5"
-                href="https://www.walkerhillstory.com/22autumn/"
-                target="_blank"
-              >
-                <figure>
-                  <span class="autoImg"
-                    ><img
-                      id="blogImg5"
-                      src="https://www.walkerhillstory.com/wp-content/uploads/2022/09/CR6_4042-1024x683.jpg"
-                      alt="워커힐 키즈 액티비티 추천 BEST 5"
-                      style="
-                        width: auto;
-                        height: 100%;
-                        margin-top: 0px;
-                        margin-left: -135px;
-                      "
-                  /></span>
-                  <figcaption style="overflow-wrap: break-word" class="">
-                    <h3 id="blogTitle5" style="display: block">
-                      도심 속에서 즐기는 가을 여행, 워커힐이 제안하는 가을
-                      패키지 3종
-                    </h3>
-                    <p id="blogDescription5" style="display: block">
-                      시원한 바람과 푸른색의 하늘을 보면, 가을이 물씬 다가왔다는
-                      걸 인지할 수 있죠. 선선해진 날씨 덕인지 문득 가을 여행을
-                      떠나고 싶으실 겁니다. 이에...
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 360px;
-                margin-right: 20px;
-              "
-              class="bx-clone"
-            >
-              <a
-                id="blogLink1"
-                href="https://www.walkerhillstory.com/22autumn-panorama/"
-                target="_blank"
-              >
-                <figure>
-                  <span class="autoImg"
-                    ><img
-                      id="blogImg1"
-                      src="https://www.walkerhillstory.com/wp-content/uploads/2022/10/0-1024x683.jpg"
-                      alt="워커힐 키즈 액티비티 추천 BEST 5"
-                      style="
-                        width: auto;
-                        height: 100%;
-                        margin-top: 0px;
-                        margin-left: -135px;
-                      "
-                  /></span>
-                  <figcaption style="overflow-wrap: break-word" class="">
-                    <h3 id="blogTitle1" style="display: block">
-                      단풍 명소 워커힐에서 만나는 도심 속 가을 나들이
-                    </h3>
-                    <p id="blogDescription1" style="display: block">
-                      맑은 공기를 마시며 형형색색의 단풍을 한눈에 볼 수 있는
-                      계절, 가을이 성큼 다가왔습니다. 도심에서 벗어나 아름답게
-                      물든 단풍을 보러 떠나는 분들이...
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 360px;
-                margin-right: 20px;
-              "
-              class="bx-clone"
-            >
-              <a
-                id="blogLink2"
-                href="https://www.walkerhillstory.com/22ncsi-top-honor/"
-                target="_blank"
-              >
-                <figure>
-                  <span class="autoImg"
-                    ><img
-                      id="blogImg2"
-                      src="https://www.walkerhillstory.com/wp-content/uploads/2022/09/50737-1024x523.jpg"
-                      alt="워커힐 키즈 액티비티 추천 BEST 5"
-                      style="
-                        width: auto;
-                        height: 100%;
-                        margin-top: 0px;
-                        margin-left: -231px;
-                      "
-                  /></span>
-                  <figcaption style="overflow-wrap: break-word" class="">
-                    <h3 id="blogTitle2" style="display: block">
-                      고객에게 최고의 서비스로 보답하는 워커힐 호텔앤리조트,
-                      2022년 국가고객만족도(NCSI) 조사 1위 수상
-                    </h3>
-                    <p id="blogDescription2" style="display: block">
-                      도심 속 자연의 편안한 휴식을 누릴 수 있는 워커힐...
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li
-              style="
-                float: left;
-                list-style: none;
-                position: relative;
-                width: 360px;
-                margin-right: 20px;
-              "
-              class="bx-clone"
-            >
-              <a
-                id="blogLink3"
-                href="https://www.walkerhillstory.com/22fallinpavilion/"
-                target="_blank"
-              >
-                <figure>
-                  <span class="autoImg"
-                    ><img
-                      id="blogImg3"
-                      src="https://www.walkerhillstory.com/wp-content/uploads/2022/09/CR6_4481-1024x683.jpg"
-                      alt="워커힐 키즈 액티비티 추천 BEST 5"
-                      style="
-                        width: auto;
-                        height: 100%;
-                        margin-top: 0px;
-                        margin-left: -135px;
-                      "
-                  /></span>
-                  <figcaption style="overflow-wrap: break-word" class="">
-                    <h3 id="blogTitle3" style="display: block">
-                      공주들의 달콤한 가을 소풍 Fall in Pavilion
-                    </h3>
-                    <p id="blogDescription3" style="display: block">
-                      가을의 푸른 하늘과, 알록달록한 단풍을 보고 있으면 눈도
-                      마음도 들뜨기 마련이죠. 들뜬 마음에 달콤한 디저트까지
-                      함께라면 기분 좋은 여유를 누릴 수...
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-          </ol>
-        </div>
-        <div class="bx-controls bx-has-pager">
-          <div></div>
-          <div class="bx-pager bx-default-pager">
-            <div class="bx-pager-item">
-              <a href="" data-slide-index="0" class="bx-pager-link">1</a>
-            </div>
-            <div class="bx-pager-item">
-              <a href="" data-slide-index="1" class="bx-pager-link active">2</a>
-            </div>
-            <div class="bx-pager-item">
-              <a href="" data-slide-index="2" class="bx-pager-link">3</a>
-            </div>
-            <div class="bx-pager-item">
-              <a href="" data-slide-index="3" class="bx-pager-link">4</a>
-            </div>
-            <div class="bx-pager-item">
-              <a href="" data-slide-index="4" class="bx-pager-link">5</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    <!-- //이야기 -->
-    <!-- 관련누리집 -->
-    <article class="family none">
-      <h2 class="blind">관련누리집</h2>
-      <dl>
-        <dt class="on">
-          <div>
-            <h3>
-              <figure>
-                <img
-                  src="/assets/hub/global/images/txt/h3_vista02.png"
-                  alt="VISTA WALKERHILL SEOUL"
-                />
-                <figcaption>VISTA WALKERHILL SEOUL</figcaption>
-              </figure>
-            </h3>
-            <p>
-              감각적 인테리어와 최신의 테크놀로지가 선보이는<br />
-              새로운 라이프 스타일 트렌드를 경험하세요.
-            </p>
-            <div class="btnC">
-              <a
-                href="/vistawalkerhillseoul/"
-                target="_blank"
-                class="btn base st02 em02 more"
-                onclick="gaEvent('워커힐 허브_PC_메인', '바로가기', '비스타 워커힐 서울');"
-                >바로가기</a
-              >
-            </div>
-          </div>
-        </dt>
-        <dd style="display: block">
-          <figure>
-            <img
-              src="/assets/hub/global/images/etc/idx_familyVista.jpg"
-              alt="비스타 워커힐 서울"
-            />
-            <figcaption>비스타 워커힐 서울</figcaption>
-          </figure>
-        </dd>
-        <dt>
-          <div>
-            <h3>
-              <figure>
-                <img
-                  src="/assets/hub/global/images/txt/h3_grand02.png"
-                  alt="GRAND WALKERHILL SEOUL"
-                />
-                <figcaption>GRAND WALKERHILL SEOUL</figcaption>
-              </figure>
-            </h3>
-            <p>
-              자연의 편안함과 감동적인 서비스가<br />
-              마음까지 따뜻해지는 행복한 경험을 선사합니다.
-            </p>
-            <div class="btnC">
-              <a
-                href="/grandwalkerhillseoul/"
-                target="_blank"
-                class="btn base st02 em02 more"
-                onclick="gaEvent('워커힐 허브_PC_메인', '바로가기', '그랜드 워커힐 서울');"
-                >바로가기</a
-              >
-            </div>
-          </div>
-        </dt>
-        <dd style="display: none">
-          <figure>
-            <img
-              src="/assets/hub/global/images/etc/idx_familyGrand.jpg"
-              alt="그랜드 워커힐 서울"
-            />
-            <figcaption>그랜드 워커힐 서울</figcaption>
-          </figure>
-        </dd>
-        <dt>
-          <div>
-            <h3>
-              <figure>
-                <img
-                  src="/assets/hub/global/images/txt/h3_douglas02.png"
-                  alt="DOUGLAS HOUSE"
-                />
-                <figcaption>DOUGLAS HOUSE</figcaption>
-              </figure>
-            </h3>
-            <p>
-              나만의 숲 속 아지트,<br />
-              더글라스 하우스에서 삶의 쉼표를 찾아 보세요.
-            </p>
-            <div class="btnC">
-              <a
-                href="/grandwalkerhillseoul/kr/douglas/Intro"
-                target="_blank"
-                class="btn base st02 em02 more"
-                onclick="gaEvent('워커힐 허브_PC_메인', '바로가기', '더글라스 하우스');"
-                >바로가기</a
-              >
-            </div>
-          </div>
-        </dt>
-        <dd style="display: none">
-          <figure>
-            <img
-              src="/assets/hub/global/images/etc/idx_familyDouglas.jpg"
-              alt="더글라스 하우스"
-            />
-            <figcaption>더글라스 하우스</figcaption>
-          </figure>
-        </dd>
-        <dt>
-          <div>
-            <h3>
-              <figure>
-                <img
-                  src="/assets/hub/global/images/txt/h3_darakhyu01.png"
-                  alt="DARAKHYU"
-                />
-                <figcaption>DARAKHYU</figcaption>
-              </figure>
-            </h3>
-            <p>
-              여행자들을 가장 잘 이해하는 스마트한 호텔,<br />
-              다락휴에서 색다른 여행을 시작하세요.
-            </p>
-            <div class="btnC">
-              <a
-                href="/darakhyu/hub/kr/"
-                target="_blank"
-                class="btn base st02 em02 more"
-                onclick="gaEvent('워커힐 허브_PC_메인', '바로가기', '다락휴');"
-                >바로가기</a
-              >
-            </div>
-          </div>
-        </dt>
-        <dd style="display: none">
-          <figure>
-            <img
-              src="/assets/hub/global/images/etc/idx_familyDarakhyu.jpg"
-              alt="다락휴"
-            />
-            <figcaption>다락휴</figcaption>
-          </figure>
-        </dd>
-        <dt>
-          <div>
-            <h3>
-              <figure>
-                <img
-                  src="/assets/hub/global/images/txt/h3_transitHotel01.png"
-                  alt="Incheon Airport Transit Hotel"
-                />
-                <figcaption>INCHEON AIRPORT TRANSIT HOTEL</figcaption>
-              </figure>
-            </h3>
-            <p>
-              인천국제공항 환승호텔과 함께<br />
-              안락하고 편안한 여행을 즐겨 보세요.
-            </p>
-            <div class="btnC">
-              <a
-                href="/transithotel/kr/"
-                target="_blank"
-                class="btn base st02 em02 more"
-                onclick="gaEvent('워커힐 허브_PC_메인', '바로가기', '인천공항 환승호텔');"
-                >바로가기</a
-              >
-            </div>
-          </div>
-        </dt>
-        <dd style="display: none">
-          <figure>
-            <img
-              src="/assets/hub/global/images/etc/idx_familyTransit.jpg"
-              alt="인천공항 환승호텔"
-            />
-            <figcaption>인천공항 환승호텔</figcaption>
-          </figure>
-        </dd>
-        <dt>
-          <div>
-            <h3>
-              <figure>
-                <img
-                  src="/assets/hub/global/images/txt/h3_matinaLounge01.png"
-                  alt="Matina Lounge"
-                />
-                <figcaption>MATINA LOUNGE</figcaption>
-              </figure>
-            </h3>
-            <p>
-              편안한 시설, 최고의 맛,<br />
-              해외 여행의 시작을 마티나 라운지와 함께 하세요.
-            </p>
-            <div class="btnC">
-              <a
-                href="/transithotel/kr/lounge/Matina.jsp"
-                target="_blank"
-                class="btn base st02 em02 more"
-                onclick="gaEvent('워커힐 허브_PC_메인', '바로가기', '마티나 라운지');"
-                >바로가기</a
-              >
-            </div>
-          </div>
-        </dt>
-        <dd style="display: none">
-          <figure>
-            <img
-              src="/assets/hub/global/images/etc/idx_familyMatina.jpg"
-              alt="마티나 라운지"
-            />
-            <figcaption>마티나 라운지</figcaption>
-          </figure>
-        </dd>
-      </dl>
-    </article>
-    <!-- //관련누리집 -->
-    <!-- 회원특전 -->
-    <article class="membership none">
-      <div>
-        <div class="hgroup">
-          <h2>
-            WALKERHILL<br />
-            MEMBERSHIP
-          </h2>
-          <p class="blt line01">
-            지금 워커힐 호텔앤리조트의 <br />
-            회원이 되시고, 차별화 된 가치와 혜택을 <br />
-            누려 보세요.
-          </p>
-        </div>
-        <div class="prestige">
-          <h3>워커힐 프레스티지 클럽</h3>
-          <p>
-            특별한 당신의 품격 있는 라이프를 위해 <br />
-            워커힐의 프리미엄 서비스를 담았습니다.
-          </p>
-          <div class="btnL">
-            <a
-              href="/membership/WPC"
-              class="btn base st02 em04 more"
-              onclick="gaEvent('워커힐 허브_PC_메인', '멤버십', '워커힐 프레스티지 클럽_상세페이지');"
-              >바로가기</a
-            >
-          </div>
-          <p class="note st05">
-            워커힐 프레스티지 클럽은 유료 멤버십으로 운영됩니다.
-          </p>
-        </div>
-      </div>
-      <div class="rewards">
-        <figure>
-          <figcaption>
-            <h3>워커힐 리워즈</h3>
-            <p>
-              편리한 가입! 사용할수록 커지는 혜택!<br />
-              손쉽게 워커힐 포인트를 적립하고<br />
-              현금처럼 사용해 보세요.
-            </p>
-            <div class="btnL">
-              <a
-                href="/membership/Rewards"
-                class="btn base st02 em02 more"
-                onclick="gaEvent('워커힐 허브_PC_메인', '멤버십', '워커힐 리워즈_상세페이지');"
-                >바로가기</a
-              >
-            </div>
-          </figcaption>
-          <span
-            ><img
-              src="/assets/hub/global/images/etc/idx_rewards.jpg"
-              alt="워커힐 리워즈"
-              class="hidden"
-          /></span>
-        </figure>
-      </div>
-    </article>
-    <!-- //회원특전 -->
-    <!-- 모임 -->
-    <article class="convention none">
-      <div>
-        <h2>WALKERHILL WEDDING &amp; MEETING</h2>
-        <p class="blt line01">
-          비즈니스 행사와 야외연회, 그리고 인생의 가장 아름다운 순간인
-          웨딩까지,<br />
-          워커힐과 함께 최고의 시간을 만들어 보시길 바랍니다.
-        </p>
-        <div class="btnC">
-          <a
-            href="/convention/Wedding"
-            class="btn base st02 em02 more"
-            onclick="gaEvent('워커힐 허브_PC_메인', '웨딩', '워커힐 웨딩_상세페이지');"
-            >웨딩 바로가기</a
-          >
-          <a
-            href="/convention/Meeting"
-            class="btn base st02 em04 more"
-            onclick="gaEvent('워커힐 허브_PC_메인', '미팅', '워커힐 미팅_상세페이지');"
-            >미팅 바로가기</a
-          >
-        </div>
-      </div>
-    </article>
-    <!-- //모임 -->
-    <!-- 사회망/소식지 -->
-    <article class="social none">
-      <div>
-        <h2>STAY IN TOUCH</h2>
-        <dl class="sns">
-          <dd>
-            <dl>
-              <dt>WALKERHILL</dt>
-              <dd>
-                <a
-                  href="http://post.naver.com/walkerhillhotel"
-                  class="ico naverPost"
-                  target="_blank"
-                  >Naver Post</a
-                >
-              </dd>
-              <dd>
-                <a
-                  href="http://blog.naver.com/walkerhillhotel"
-                  class="ico naverBlog"
-                  target="_blank"
-                  >Naver Blog</a
-                >
-              </dd>
-              <dd>
-                <a
-                  href="http://tv.naver.com/walkerhill"
-                  class="ico naverTV"
-                  target="_blank"
-                  >Naver TV</a
-                >
-              </dd>
-              <dd>
-                <a
-                  href="http://pf.kakao.com/_yMjKxl"
-                  class="ico kakaoTalk"
-                  target="_blank"
-                  >Kakao Talk</a
-                >
-              </dd>
-            </dl>
-          </dd>
-          <dd>
-            <dl>
-              <dt>GRAND WALKERHILL SEOUL</dt>
-              <dd>
-                <a
-                  href="https://www.facebook.com/grandwalkerhillseoul"
-                  class="ico facebook"
-                  target="_blank"
-                  >Grand Facebook</a
-                >
-              </dd>
-              <dd>
-                <a
-                  href="https://www.instagram.com/walkerhill_hotel"
-                  class="ico instagram"
-                  target="_blank"
-                  >Grand Instagram</a
-                >
-              </dd>
-              <dd>
-                <a
-                  href="https://www.tripadvisor.co.kr/Hotel_Review-g294197-d301817-Reviews-Grand_Walkerhill_Seoul-Seoul.html"
-                  class="ico tripadvisor"
-                  target="_blank"
-                  >Grand Tripadvisor</a
-                >
-              </dd>
-              <dd>
-                <a
-                  href="https://www.youtube.com/grandwalkerhillseoul"
-                  class="ico youtube"
-                  target="_blank"
-                  >Grand Youtube</a
-                >
-              </dd>
-            </dl>
-          </dd>
-          <dd>
-            <dl>
-              <dt>VISTA WALKERHILL SEOUL</dt>
-              <dd>
-                <a
-                  href="https://www.facebook.com/vistawalkerhill"
-                  class="ico facebook"
-                  target="_blank"
-                  >Vista Facebook</a
-                >
-              </dd>
-              <dd>
-                <a
-                  href="https://www.instagram.com/vista_walkerhill"
-                  class="ico instagram"
-                  target="_blank"
-                  >Vista Instagram</a
-                >
-              </dd>
-              <dd>
-                <a
-                  href="https://www.tripadvisor.co.kr/Hotel_Review-g294197-d500996-Reviews-Vista_Walkerhill_Seoul-Seoul.html"
-                  class="ico tripadvisor"
-                  target="_blank"
-                  >Vista Tripadvisor</a
-                >
-              </dd>
-              <dd>
-                <a
-                  href="https://www.youtube.com/c/VISTAWALKERHILLSEOUL"
-                  class="ico youtube"
-                  target="_blank"
-                  >Vista Youtube</a
-                >
-              </dd>
-            </dl>
-          </dd>
-          <dd>
-            <dl>
-              <dt>DARAKHYU</dt>
-              <dd>
-                <a
-                  href="https://www.facebook.com/darakhyu"
-                  class="ico facebook"
-                  target="_blank"
-                  >Darakhyu Facebook</a
-                >
-              </dd>
-              <dd>
-                <a
-                  href="https://www.instagram.com/capsule_hotel_darak/"
-                  class="ico instagram"
-                  target="_blank"
-                  >Darakhyu Instagram</a
-                >
-              </dd>
-            </dl>
-          </dd>
-        </dl>
-      </div>
-    </article>
-
-    <footer class="none">
-      <div id="quick">
-        <button
-          type="button"
-          class="ico"
-          onclick="gaEvent('워커힐 허브_PC','퀵 버튼','TOP');"
-        >
-          TOP
-        </button>
-      </div>
-
-      <nav>
-        <h2 class="blind">하단바로가기</h2>
-        <ul class="gnbFoot">
-          <li>
-            <h3>Our Company</h3>
-            <ul>
+        <!--text area-->
+        <div>
+          <div class="text-area">
+            <ul class="flexs">
               <li>
-                <a href="#">워커힐 호텔앤리조트</a>
+                <span class="bolds">Our Company</span>
+                <ul>
+                  <li>아이오페 역사</li>
+                  <li>아이오페 브랜드</li>
+                  <li>아이오페 웹 매거진</li>
+                  <li>아이오페 대외사업부</li>
+                  <li>아이오페 아카데미</li>
+                  <li>아이오페 ESG 경영</li>
+                </ul>
               </li>
-              <li><a href="#">워커힐 역사</a></li>
-              <li><a href="#">워커힐 브랜드</a></li>
-              <li><a href="#">워커힐 웹 매거진</a></li>
-              <li><a href="#">워커힐 뉴스룸</a></li>
-              <li><a href="#">워커힐 대외사업부</a></li>
-              <li><a href="#">워커힐 아카데미</a></li>
-              <li><a href="#">워커힐 ESG 경영</a></li>
+              <li>
+                <span class="bolds">For Guests</span>
+                <ul>
+                  <li>패키지/프로모션</li>
+                  <li>아이오페 고객센터</li>
+                  <li>온라인 결제</li>
+                  <li>스토어</li>
+                </ul>
+              </li>
+              <li>
+                <span class="bolds">Membership</span>
+                <ul>
+                  <li>멤버십 종합안내</li>
+                  <li>아이오페 리워즈</li>
+                  <li>아이오페 프레스티지 클럽</li>
+                  <li>아이오페 VIP 서비스</li>
+                  <li>마이 아이오페</li>
+                </ul>
+              </li>
             </ul>
-          </li>
-          <li>
-            <h3>For Guests</h3>
-            <ul>
-              <li><a href="#">객실 검색/예약</a></li>
-              <li><a href="#">다이닝 검색/예약</a></li>
-              <li><a href="#">패키지/프로모션</a></li>
-              <li><a href="#">워커힐 고객센터</a></li>
-              <li><a href="#">예약확인</a></li>
-              <li><a href="#">온라인 결제</a></li>
-              <li><a href="#">스토어</a></li>
-              <li><a href="#">와인스토어</a></li>
+            <ul class="flexs margins">
+              <li class="bolds">개인정보처리방침</li>
+              <li>이용약관</li>
+              <li>사이트맵</li>
+              <li>인재채용</li>
+              <li>윤리경영</li>
+              <li>제휴문의</li>
             </ul>
-          </li>
-          <li>
-            <h3>Membership</h3>
-            <ul>
-              <li><a href="#">멤버십 종합안내</a></li>
-              <li><a href="#">워커힐 리워즈</a></li>
-              <li><a href="#">워커힐 프레스티지 클럽</a></li>
-              <li><a href="#">워커힐 STAR VIP 서비스</a></li>
-              <li><a href="#">마이 워커힐</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="about">
-          <li>
-            <a href="#"><strong>개인정보처리방침</strong></a>
-          </li>
-          <li><a href="#">이용약관</a></li>
-          <li><a href="#">사이트맵</a></li>
-          <li><a href="#">인재채용</a></li>
-          <li><a href="#">윤리경영</a></li>
-          <li><a href="#">제휴문의</a></li>
-        </ul>
-      </nav>
-      <address>
-        <dl class="contact">
-          <dt>대표번호</dt>
-          <dd>1670-0005</dd>
-          <dt>이메일 문의</dt>
-          <dd>
-            <a href="#">contact@walkerhill.com</a>
-          </dd>
-        </dl>
-        <aside>
-          <figure>
-            <span
-              ><img src="/assets/hub/global/images/ico/ico_nba01.png"
-            /></span>
-            <figcaption>
-              호텔리조트 부문 국가브랜드 대상 <br /><strong
-                >6년 연속 수상</strong
-              >
-            </figcaption>
-          </figure>
-          <figure>
-            <span
-              ><img src="/assets/hub/global/images/ico/ico_iEcoAward01.png"
-            /></span>
-            <figcaption>
-              인터넷 에코어워드 코리아 2017 <br /><strong
-                >인터넷쇼핑 혁신대상 수상</strong
-              >
-            </figcaption>
-          </figure>
-          <figure>
-            <span
-              ><img src="/assets/hub/global/images/ico/ico_tripadvisor01.png"
-            /></span>
-            <figcaption>
-              TRIPADVISOR <br /><strong>BEST OF THE BEST 2021</strong>
-            </figcaption>
-          </figure>
-          <figure>
-            <span
-              ><img src="/assets/hub/kr/images/ico/ico_ecoLabel01.png"
-            /></span>
-            <figcaption><strong>친환경 호텔 인증</strong></figcaption>
-          </figure>
-          <figure>
-            <span
-              ><img
-                src="/assets/grandwalkerhillseoul/global/images/txt/txt_ismsp01.png"
-            /></span>
-            <figcaption>
-              <dl class="info01 st05">
-                <dt>인증범위</dt>
-                <dd>
-                  스피드메이트 및<br />
-                  워커힐 호텔 서비스 운영
-                </dd>
-                <dt>유효기간</dt>
-                <dd>2021.12.15 ~ 2024.12.14</dd>
-              </dl>
-            </figcaption>
-          </figure>
-          <figure>
-            <span
-              ><img src="/assets/hub/global/images/ico/ico_NCSI01.jpg"
-            /></span>
-            <figcaption>
-              2022년 국가고객만족도 (NCSI)<br /><strong
-                >호텔 부문 1위 수상</strong
-              >
-            </figcaption>
-          </figure>
-        </aside>
-
-        <dl class="addr">
-          <dt class="blind">법인명</dt>
-          <dd>SK네트웍스(주)</dd>
-          <dt class="blind">주소</dt>
-          <dd>경기도 수원시 팔달구 매산로52번길 4, 3층(매산로2가)</dd>
-          <dt>대표이사</dt>
-          <dd>박상규</dd>
-          <dt>사업자등록번호</dt>
-          <dd>124-81-00718</dd>
-          <dt>통신판매 신고번호</dt>
-          <dd>제2015-서울광진-0710호</dd>
-          <dt>워커힐 호텔 소재지</dt>
-          <dd>04963 서울특별시 광진구 워커힐로 177</dd>
-        </dl>
-        <p>
-          COPYRIGHT 2018 SK NETWORKS CO., LTD. WALKERHILL ALL RIGHTS RESERVED.
-        </p>
-        <div class="link">
-          <select
-            name="quickLink"
-            id="quickLink"
-            class="links select2-hidden-accessible"
-            onchange="if(this.value) window.open(this.value); gaEvent('워커힐 허브_PC','QUICK LINK', $('#quickLink option:selected').text());"
-            title="관련사이트 새창열림"
-            tabindex="-1"
-            aria-hidden="true"
-          >
-            <option>QUICK LINK</option>
-            <option value="https://www.sknetworks.co.kr/">SK 네트웍스</option>
-            <option value="https://www.skcarrental.com/">SK 렌터카</option>
-            <option value="https://www.speedmate.com/main.do">
-              SK 스피드메이트
-            </option>
-            <option value="https://www.skmagic.com/main">
-              SK 매직
-            </option></select
-          ><span
-            class="select2 select2-container select2-container--default"
-            dir="ltr"
-            style="width: 122px"
-            ><span class="selection"
-              ><span
-                class="select2-selection select2-selection--single links"
-                role="combobox"
-                aria-haspopup="true"
-                aria-expanded="false"
-                title="관련사이트 새창열림"
-                tabindex="0"
-                aria-labelledby="select2-quickLink-container"
-                ><span
-                  class="select2-selection__rendered"
-                  id="select2-quickLink-container"
-                  title="QUICK LINK"
-                  >QUICK LINK</span
-                ><span class="select2-selection__arrow" role="presentation"
-                  ><b role="presentation"></b></span></span></span
-            ><span class="dropdown-wrapper" aria-hidden="true"></span
-          ></span>
+          </div>
+          <hr />
+          <table>
+            <tr>
+              <th scope="col">고객센터</th>
+              <td>080-023-5454</td>
+            </tr>
+            <tr>
+              <th scope="col" class="lefts">이메일</th>
+              <td>support@iope.com</td>
+            </tr>
+          </table>
         </div>
-      </address>
+      </div>
     </footer>
-    <!-- 사이트맵 -->
-    <div id="sitemap" class="popup none">
-      <section>
-        <h2 class="blind">사이트맵</h2>
-        <menu class="sitemap">
-          <li>
-            <h3>WALKERHILL</h3>
-            <menu>
-              <li>
-                <a
-                  href="/about/Walkerhill"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WALKERHILL_워커힐 호텔앤리조트');"
-                  >워커힐 호텔앤리조트</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/about/History"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WALKERHILL_워커힐 역사');"
-                  >워커힐 역사</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/about/Brand"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WALKERHILL_워커힐 브랜드');"
-                  >워커힐 브랜드</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/about/ESG"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WALKERHILL_워커힐 ESG &amp; Green 상품');"
-                  >워커힐 ESG &amp; Green 상품</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/about/Map"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WALKERHILL_워커힐 가이드맵');"
-                  >워커힐 가이드맵</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/customer/VOCForm.wh"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WALKERHILL_워커힐 고객센터');"
-                  >워커힐 고객센터</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/customer/Privacy"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WALKERHILL_워커힐 정책');"
-                  >워커힐 정책</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/about/CustomerService"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WALKERHILL_워커힐 대외사업부');"
-                  >워커힐 대외사업부</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/about/Academy"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WALKERHILL_워커힐 아카데미');"
-                  >워커힐 아카데미</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/hr/RightPeople"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WALKERHILL_인재채용');"
-                  >인재채용</a
-                >
-              </li>
-            </menu>
-          </li>
-          <li>
-            <h3>BRAND</h3>
-            <menu>
-              <li>
-                <a
-                  href="/about/Brand"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','BRAND_브랜드 종합안내');"
-                  >브랜드 종합안내</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/vistawalkerhillseoul/kr/"
-                  target="_blank"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','BRAND_비스타 워커힐 서울');"
-                  >비스타 워커힐 서울</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/grandwalkerhillseoul/kr/"
-                  target="_blank"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','BRAND_그랜드 워커힐 서울');"
-                  >그랜드 워커힐 서울</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/grandwalkerhillseoul/kr/douglas/Intro"
-                  target="_blank"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','BRAND_더글라스 하우스');"
-                  >더글라스 하우스</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/darakhyu/hub/kr/"
-                  target="_blank"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','BRAND_다락휴');"
-                  >다락휴</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/transithotel/kr/"
-                  target="_blank"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','BRAND_인천공항 환승호텔');"
-                  >인천공항 환승호텔</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/transithotel/kr/lounge/Matina.jsp"
-                  target="_blank"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','BRAND_마티나 라운지');"
-                  >마티나 라운지</a
-                >
-              </li>
-              <!--<li><a href="https://www.thepinx.co.kr/golfclub/web/index.px" target="_blank" onclick="gaEvent('워커힐 허브_PC','사이트맵','BRAND_핀크스');">핀크스</a></li>
-                                        <li><a href="https://www.thepinx.co.kr/podo/web/index.px" target="_blank" onclick="gaEvent('워커힐 허브_PC','사이트맵','BRAND_포도 호텔');">포도호텔</a></li>-->
-            </menu>
-          </li>
-          <li>
-            <h3>OFFERS</h3>
-            <menu>
-              <li>
-                <a
-                  href="/offers/Overview"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','OFFERS_워커힐 패키지/프로모션');"
-                  >워커힐 패키지/프로모션</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/SeasonOffers"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','OFFERS_워커힐 기획전');"
-                  >워커힐 기획전</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/offers/Facilities"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','OFFERS_워커힐 편의시설');"
-                  >워커힐 편의시설</a
-                >
-              </li>
-            </menu>
-          </li>
-          <li>
-            <h3>MEMBERSHIP</h3>
-            <menu>
-              <li>
-                <a
-                  href="/membership/Overview"
-                  onclick="gaEvent('워커힐 허브_PC_공통','사이트맵','MEMBERSHIP_멤버십 종합안내');"
-                  >멤버십 종합안내</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/membership/Rewards"
-                  onclick="gaEvent('워커힐 허브_PC_공통','사이트맵','MEMBERSHIP_WALKERHILL REWARDS');"
-                  >WALKERHILL REWARDS</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/membership/WPC"
-                  onclick="gaEvent('워커힐 허브_PC_공통','사이트맵','MEMBERSHIP_WALKERHILL PRESTIGE CLUB');"
-                  >WALKERHILL PRESTIGE CLUB</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/membership/StarVIP"
-                  onclick="gaEvent('워커힐 허브_PC_공통','사이트맵','MEMBERSHIP_WALKERHILL STAR VIP');"
-                  >WALKERHILL STAR VIP</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/membership/App"
-                  onclick="gaEvent('워커힐 허브_PC_공통','사이트맵','MEMBERSHIP_워커힐 앱');"
-                  >워커힐 앱</a
-                >
-              </li>
-            </menu>
-          </li>
-          <li>
-            <h3>BOOK</h3>
-            <menu>
-              <li>
-                <a
-                  href="/book/Room"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','BOOK_객실 검색/예약');"
-                  >객실 검색/예약</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/book/Dining"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','BOOK_다이닝 검색/예약');"
-                  >다이닝 검색/예약</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/SubLogInReserveForm.wh"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','BOOK_예약확인');"
-                  >예약확인</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/payment/Payment.wh"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','BOOK_온라인 결제');"
-                  >온라인 결제</a
-                >
-              </li>
-            </menu>
-          </li>
-          <li>
-            <h3>STORE</h3>
-            <menu>
-              <li>
-                <a
-                  href="/store/ProductList?cIdx=3"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','STORE_상품구매');"
-                  >상품구매</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/winestore/"
-                  target="_blank"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','와인 스토어');"
-                  >와인 스토어</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/store/Cart.wh"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','STORE_장바구니');"
-                  >장바구니</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/store/MyOrder"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','STORE_주문조회');"
-                  >주문조회</a
-                >
-              </li>
-            </menu>
-          </li>
-          <li>
-            <h3>WEDDING &amp; MEETING</h3>
-            <menu>
-              <li>
-                <a
-                  href="/convention/Wedding"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WEDDING &amp; MEETING_웨딩');"
-                  >WEDDING</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/convention/Meeting"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WEDDING &amp; MEETING_미팅');"
-                  >MEETING</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/convention/Family"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','WEDDING &amp; MEETING_가족연회');"
-                  >FAMILY GATHERINGS</a
-                >
-              </li>
-            </menu>
-          </li>
-          <li>
-            <h3>ACTIVITY</h3>
-            <menu>
-              <li>
-                <a
-                  href="/book/Activity"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','ACTIVITY_액티비티 예약하기');"
-                  >액티비티 검색/예약</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/SeasonOffers/Walkee"
-                  onclick="gaEvent('워커힐 허브_PC','사이트맵','ACTIVITY_워키 프로그램');"
-                  >워키 프로그램</a
-                >
-              </li>
-              <!--<li><a href="/vistawalkerhillseoul/wellness/Program" target="_blank" onClick="gaEvent('워커힐 허브_PC','사이트맵','ACTIVITY_웰니스 프로그램');">웰니스 프로그램</a></li>-->
-            </menu>
-          </li>
-        </menu>
-        <button type="button" class="ico close st04">닫기</button>
-      </section>
-    </div>
-    <!-- //사이트맵 -->
+    <address>
+      <!--sns area-->
+      <div class="wraps space-betweens align-centers">
+        <div>
+          <img
+            src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2020/10/12/bi_amorepacific.png"
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2019/09/09/bi_iope.png"
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2020/02/19/bi_hera.png"
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2019/09/09/bi_espoir_new2.png"
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2020/05/19/bi_lirikos_new.png"
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2020/11/25/bi_mamonde_new2_2_4.png"
+          />
+        </div>
+      </div>
+    </address>
+    <script>
+      AOS.init({
+        offset: 120,
+        delay: 0,
+        duration: 2900,
+        easing: "ease",
+        once: false,
+        mirror: false,
+        anchorPlacement: "top-bottom",
+      });
+    </script>
   </body>
 </html>
