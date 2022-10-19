@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0" />
+  <title>IOPE</title>
+  <link rel="stylesheet" href="style.css" />
+  <style type="text/css"></style>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript"></script>
+  <!-- AOS 라이브러리 불러오기-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <!--이미지 따로 사용, 히어로 이미지 모색-->
+  <main>
+    <header>
+      <div class="space-betweens align-centers">
+        <!--logo-->
+        <div class="logo paddings">
+          <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1836931c708e3fdc944896125360350c4bdb8671/img/logo.svg" />
+        </div>
+        <nav id="nav" class="space-betweens aline-centers">
+          <!--dropdown-->
+          <div class="dropdown space-betweens">
+            <ul class="space-betweens">
+              <li>
+                <a href="javascript:void(0)" onclick="showham1()">베스트셀러</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" onclick="showham2()">제품</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" onclick="showham3()">아이오페 소개</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" onclick="showham4()">아이오페 랩</a>
+              </li>
+            </ul>
+            <div class="navs_menu flexs">
+              <div onclick="openPcTap()" class="ham mobile_none">
+                <span></span> <span></span> <span></span>
+              </div>
+            </div>
+          </div>
+          <!--sd-menu-->
+          <div class="sd-menu1" id="sd-menu1">
+            <ul class="centers">
+              <li>
+                <a href="javascript:void(0)">가장 사랑받은 아이오페의 베스트셀러 제품들을 만나보세요.</a>
+              </li>
+            </ul>
+            <div id="closehambtn1" onclick="closeham1()">✕</div>
+          </div>
+          <div class="sd-menu2" id="sd-menu2">
+            <ul class="centers">
+              <li><a href="javascript:void(0)">신제품</a></li>
+              <li><a href="javascript:void(0)">스킨케어</a></li>
+              <li><a href="javascript:void(0)">메이크업</a></li>
+              <li><a href="javascript:void(0)">맨</a></li>
+            </ul>
+            <div id="closehambtn2" onclick="closeham2()">✕</div>
+          </div>
+          <div class="sd-menu3" id="sd-menu3">
+            <ul class="centers">
+              <li><a href="javascript:void(0)">주요 수상내역</a></li>
+              <li><a href="javascript:void(0)">브랜드 스토리</a></li>
+              <li><a href="javascript:void(0)">브랜드 히스토리</a></li>
+              <li><a href="javascript:void(0)">뉴스</a></li>
+              <li><a href="javascript:void(0)">갤러리</a></li>
+            </ul>
+            <div id="closehambtn3" onclick="closeham3()">✕</div>
+          </div>
+          <div class="sd-menu4" id="sd-menu4">
+            <ul class="centers">
+              <li><a href="javascript:void(0)">소개</a></li>
+              <li><a href="javascript:void(0)">온라인 셀프 피부 진단</a></li>
+              <li><a href="javascript:void(0)">피부미래 솔루션</a></li>
+              <li><a href="javascript:void(0)">스킨 뉴스</a></li>
+            </ul>
+            <div id="closehambtn4" onclick="closeham4()">✕</div>
+          </div>
+        </nav>
+        <div class="filter-dark" id="filter-dark" onclick="closeham()"></div>
+      </div>
+      <div id="pcTap" class="mobile_none">
+        <div class="pc_tap_main">
+          <div onclick="closePcTap()" id="closePcTap">✖</div>
+          <div class="tap_main">
+            <div class="pc_tap_menu">
+              <div>
+                <span></span>
+                <button class="tabmenu-button tabpc tabpc-color" onclick="openPc(event,'pc1')">
+                  베스트셀러
+                </button>
+              </div>
+              <div>
+                <span></span>
+                <button class="tabmenu-button tabpc" onclick="openPc(event,'pc2')">
+                  제품
+                </button>
+              </div>
+              <div>
+                <span></span>
+                <button class="tabmenu-button tabpc" onclick="openPc(event,'pc3')">
+                  아이오페 소개
+                </button>
+              </div>
+              <div>
+                <span></span>
+                <button class="tabmenu-button tabpc" onclick="openPc(event,'pc4')">
+                  아이오페 랩
+                </button>
+              </div>
+            </div>
+            <div id="pc1" class="pc">
+              <div>
+                <img src="https://github.com/heyangineer/iope-main-ui/blob/main/img/iope-best-seller.PNG?raw=true" />
+              </div>
+            </div>
+            <div id="pc2" class="pc" style="visibility: hidden">
+              <div>
+                <ul>
+                  <p>신제품</p>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <p>스킨케어</p>
+                  <li>피부 고민별</li>
+                  <li>유형별</li>
+                  <li>라인별</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <p>메이크업</p>
+                  <li>유형별</li>
+                  <li>라인별</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <p>맨</p>
+                  <li>고민별</li>
+                  <li>유형별</li>
+                </ul>
+              </div>
+            </div>
+            <div id="pc3" class="pc" style="visibility: hidden">
+              <div>
+                <ul>
+                  <p>주요 수상내역</p>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <p>브랜드 스토리</p>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <p>브랜드 히스토리</p>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <p>뉴스</p>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <p>갤러리</p>
+                </ul>
+              </div>
+            </div>
+            <div id="pc4" class="pc" style="visibility: hidden">
+              <div>
+                <ul>
+                  <p>소개</p>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <p>온라인 셀프 피부 진단</p>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <p>피부미래 솔루션</p>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <p>스킨 뉴스</p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function openPc(evt, pcNum) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("pc");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.visibility = "hidden";
+          }
+          tablinks = document.getElementsByClassName("tabpc");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(
+              " tabpc-color",
+              ""
+            );
+          }
+          document.getElementById(pcNum).style.visibility = "visible";
+          evt.currentTarget.className += " tabpc-color";
+        }
+      </script>
+    </header>
+    <!--
+        <div>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zIdJDdlcpOA?autoplay=1&mute=1&start=110&end=120&controls=0&loop=1&playlist=zIdJDdlcpOA&playsinline=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
+    <div id="background" class="player" data-property="{
+        videoURL: 'https://www.youtube.com/watch?v=zIdJDdlcpOA',
+        mute: true,
+        showControls: false,
+        useOnMobile: true,
+        quality: 'highres',
+        containment: 'main',
+        loop: true,
+        autoPlay: true,
+        stopMovieOnBlur: false,
+        startAt: 0,
+        opacity: 1
+        }"></div>
+  </main>
+  <!--brand-story에 있는 이미지 활용-->
+  <article class="skin-science space-betweens">
+    <div>
+      <h1 style="color: white; margin-top: 30px">IOPE</h1>
+      <div class="space-betweens align-centers">
+        <!--text area-->
+        <div style="color: white">
+          <p>
+            SKIN SCIENCE
+            <span class="span1"></span>
+          </p>
+          <p>PLANT SCIENCE <span class="span2"></span></p>
+          <p>BIO SCIENCE<span class="span3"></span></p>
+        </div>
+        <!--photo area-->
+        <div class="space-betweens">
+          <div>
+            <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1dd6e4476302bf8584a6bf3cebf3a98c8f4c8b34/img/new-philosophy-01.jpg" />
+          </div>
+          <div>
+            <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1dd6e4476302bf8584a6bf3cebf3a98c8f4c8b34/img/new-philosophy-02.jpg" />
+          </div>
+          <div>
+            <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1dd6e4476302bf8584a6bf3cebf3a98c8f4c8b34/img/new-philosophy-03.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </article>
+  <article class="best-seller">
+    <!--1st floor-->
+    <div class="first space-betweens">
+      <div style="width: 18.2%">
+        <img style="padding-bottom: 50px" src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/1540862452726_2.png" />
+        <h2>퍼펙트 커버 쿠션</h2>
+      </div>
+      <div class="text-area">
+        <div></div>
+        <h1>BEST SELLER</h1>
+        <p>지금 인기있는 제품들</p>
+      </div>
+      <div style="margin-right: 1.5%">
+        <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/20210216_final_retinol-expert-01_bestseller_thumbnail.png" />
+        <h2>레티놀 엑스퍼트</h2>
+      </div>
+    </div>
+    <!--2nd floor-->
+    <div class="second space-betweens">
+      <div>
+        <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/20210503_final_Bio-Conditioning-Essence_bestseller-img_01_pc.png" />
+        <h2>바이오 컨디셔닝 에센스</h2>
+      </div>
+      <div>
+        <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/20210525_final_IOPE-A.C.E.-Vitamin-C30_pdp_thumbnail_01_pc_1.png" />
+        <h2>에이스 비타민 C30</h2>
+      </div>
+      <div>
+        <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/20211012_final_SUPER-VITAL-CREAM-BIO-POTENTIAL_thumb_05_pc.jpg" />
+        <h2>슈퍼바이탈 크림 바이오 포텐셜</h2>
+      </div>
+      <div>
+        <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/img-20210129-bestseller-stem_m.png" />
+        <h2>스템Ⅲ 앰플</h2>
+      </div>
+      <div style="margin-right: 1.5%">
+        <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/14b959825028f02d0423fbb6a633fb33417057f3/img/img_20210812-bestseller-c23-n.png" />
+        <h2>더 비타민 C23</h2>
+      </div>
+    </div>
+  </article>
+  <!--메인에 있던 이미지 활용-->
+  <article class="products margins">
+    <div class="wraps">
+      <h1 class="margins">NEW ARRIVALS</h1>
+      <div class="flexs">
+        <!--text area-->
+        <div class="text-area flexs">
+          <h4>Bio Seletinoid 20</h4>
+          <div>
+            <h3>
+              2가지 바이오 성분의 시너지로 <br />노화 속도를 다시 느리게
+            </h3>
+            <p>
+              진화된 바이오 사이언스로 다양한 노화 징후를 개선하고 <br />
+              가속화된 노화속도를 되돌려 <br />
+              스스로 힘이 생긴 잠재력 있는 피부
+            </p>
+            <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/c5fae7a39d9e9287bd0fdf02f5d1892e1fbbb195/img/super-vital-cream-bio-potential-img02-bottom_AdobeExpress.gif" />
+          </div>
+        </div>
+        <!--fixed area-->
+        <div class="fixed-area">
+          <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1836931c708e3fdc944896125360350c4bdb8671/img/logo.svg" />
+        </div>
+        <!--slide area-->
+        <div>
+          <section>
+            <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/d9b490e075a4bff972c505c40b2708eb90a4553f/img/20211022_final_Super-Vital-Cream-Bio-Potential_main-kv_pc_01.jpg" />
+            <div class="margins paddings">
+              <p>슈퍼 바이탈 크림 바이오 포텐셜</p>
+              <h2 class="lefts">
+                어디에도 휘둘리지 않는 쎈 피부<br />
+                피부, 포텐을 가지다
+              </h2>
+            </div>
+          </section>
+          <!-- <img
+          src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/d9b490e075a4bff972c505c40b2708eb90a4553f/img/img20210504-kv-bio.jpg"
+        />
+        <img
+          src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/d9b490e075a4bff972c505c40b2708eb90a4553f/img/20220125_wrinkle-report_main-kv_pc.jpg"
+        /> -->
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="iope-lab">
+    <div class="wraps space-betweens">
+      <!--text area-->
+      <div class="text-area">
+        <div class="flexs">
+          <h1>IOPE LAB</h1>
+          <div data-aos="fade-down" class="first-div">
+            <div style="color: white; text-align: center">
+              <h2>모든 과정을 심도 있게</h2>
+              <p class="none">
+                아이오페는 피부부터 소재, 기술까지<br />
+                모든 과정에 걸쳐 심도있는 연구를 합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="second-div flexs">
+          <div style="color: white; text-align: center">
+            <h2>깊이 있는 피부 연구</h2>
+            <p class="none">
+              실제 피부 분석과 차별화된 기술 연구로<br />
+              고효능 성분을 효과적이고 안전하게 피부에<br />
+              전달합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--photo area-->
+      <div class="photo-area">
+        <div data-aos="fade-left" class="third-div flexs">
+          <div style="color: white; text-align: center">
+            <h2>고객 맞춤 솔루션</h2>
+            <p class="none">
+              개인마다 다른 피부 고민과<br />
+              타고난 피부까지 고려한 맞춤 솔루션은<br />
+              피부의 미래를 바꾸어 줍니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="review">
+    <!--slide area-->
+    <section class="space-betweens">
+      <div class="photo-area">
+        <h4>STEMIII AMPOULE</h4>
+      </div>
+      <div class="text-area">
+        <h1 class="lefts" style="font-size: 2.5rem; color: #333333">
+          <strong style="color: #06357a; font-size: 5rem">“</strong><br />원래
+          타고난 피부처럼<br />탄력있고 탱탱해진 느낌이에요
+        </h1>
+        <p>joh*****님의 스템III 앰플 사용후기</p>
+        <button class="white-btn margins">
+          <img src="https://www.walkerhill.com/assets/hub/global/images/ico/ico_arrow03.png" />
+        </button>
+      </div>
+      <div class="review-img-two"></div>
+    </section>
+    <button style="left: 1040px" class="black-btn">◄</button>
+    <button class="black-btn">▶</button>
+    <!--
+        <section>
+            <div><img src="https://www.iope.com/kr/ko/resource/img/renew/main/img-review02.jpg"></div>
+            <h1>“<br>피부 안쪽부터 차오르는<br>느끼믈 받아 아주 만족합니다</h1>
+            <p>bao22*****님의 슈퍼바이탈 크림 리치 사용후기</p>
+            <button>자세히 보기</button>
+        </section>
+-->
+  </article>
+  <article class="brand-story">
+    <div class="wraps flexs align-centers">
+      <div class="margins">
+        <img src="https://www.iope.com/kr/ko/resource/img/renew/main/bg-brandstory_m.jpg" />
+      </div>
+      <div>
+        <p style="border-bottom: 2px solid #06357a">
+          아이오페는 연구를 기반으로 맞춤 솔루션을 제안합니다
+        </p>
+        <h1 class="lefts" style="margin: 20px 0; color: #333333">
+          BRAND STORY
+        </h1>
+        <p>
+          피부부터 소재, 기술까지 <br />모든 과정에 걸쳐 심도 있는 연구를
+          합니다.
+        </p>
+        <button class="white-btn" style="margin: 20px 0">
+          자세히 보기<img src="https://www.walkerhill.com/assets/hub/global/images/ico/ico_arrow03.png" />
+        </button>
+      </div>
+    </div>
+  </article>
+  <!-- <article class="with-iope">
+    <div class="wraps flexs"> -->
+  <!--text area-->
+  <!-- <div>
+        <h1>#withIOPE</h1>
+        <p>#IOPE #IOPEINNOVATOR</p>
+      </div>
+      <div class="option active">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?0)"></div>
+        <div class="label">
+          <div class="icon" style="background: #006466">
+            <i class="fas fa-archive"></i>
+          </div>
+          <div class="info">
+            <div class="main">vulputate dignissim</div>
+            <div class="sub">tincidunt tortor aliquam nulla facilisi</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?1)"></div>
+        <div class="label">
+          <div class="icon" style="background: #065a60">
+            <i class="fas fa-browser"></i>
+          </div>
+          <div class="info">
+            <div class="main">nullam eget</div>
+            <div class="sub">massa tincidunt nunc pulvinar sapien</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?2)"></div>
+        <div class="label">
+          <div class="icon" style="background: #0b525b">
+            <i class="fas fa-bug"></i>
+          </div>
+          <div class="info">
+            <div class="main">velit laoreet</div>
+            <div class="sub">iaculis urna id volutpat lacus</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?3)"></div>
+        <div class="label">
+          <div class="icon" style="background: #144552">
+            <i class="fas fa-coffee"></i>
+          </div>
+          <div class="info">
+            <div class="main">nibh venenatis</div>
+            <div class="sub">tristique risus nec feugiat in</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?4)"></div>
+        <div class="label">
+          <div class="icon" style="background: #1b3a4b">
+            <i class="fas fa-file"></i>
+          </div>
+          <div class="info">
+            <div class="main">dapibus ultrices</div>
+            <div class="sub">urna neque viverra justo nec</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?5)"></div>
+        <div class="label">
+          <div class="icon" style="background: #212f45">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <div class="info">
+            <div class="main">orci ac</div>
+            <div class="sub">posuere lorem ipsum dolor sit</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?6)"></div>
+        <div class="label">
+          <div class="icon" style="background: #272640">
+            <i class="fas fa-window"></i>
+          </div>
+          <div class="info">
+            <div class="main">turpis massa</div>
+            <div class="sub">elit eget gravida cum sociis</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?7)"></div>
+        <div class="label">
+          <div class="icon" style="background: #312244">
+            <i class="fas fa-user-secret"></i>
+          </div>
+          <div class="info">
+            <div class="main">id volutpat</div>
+            <div class="sub">blandit cursus risus at ultrices</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?8)"></div>
+        <div class="label">
+          <div class="icon" style="background: #3e1f47">
+            <i class="fas fa-shield"></i>
+          </div>
+          <div class="info">
+            <div class="main">dies irea</div>
+            <div class="sub">tristique viverra dolor eget</div>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="shadow"></div>
+        <div class="background" style="background: url(https://source.unsplash.com/580x400?9)"></div>
+        <div class="label">
+          <div class="icon" style="background: #4d194d">
+            <i class="fas fa-fire-extinguisher"></i>
+          </div>
+          <div class="info">
+            <div class="main">venenatis ac</div>
+            <div class="sub">urna justo sociis at</div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!--auto slide-->
+  <!-- <div>
+      <section>
+        <img src="https://static.pxlecdn.com/photos/517435457/medium/ac1a278e5d416142581a.jpg" />
+        <p>
+          #광고 @iope_official 화장할때마다 피부가 탄력을 잃은 것 같아 고민이
+          많아서 피부 탄력과 리프팅에 큰 관심을 갖고 있었던 요즘! 28일 만에
+          마스크존 부위의 얼굴 각도가 이전보다 나아지는 효과를 증명하는 리프팅
+          앰플이 있다해서 바로 사용해봤어요!
+        </p>
+      </section>
+    </div> -->
+  <!-- </article> -->
+  <aside>
+    <!--top fix-->
+    <div><a href="#" class="top">↥</a></div>
+  </aside>
+  <footer>
+    <div class="wraps space-betweens align-centers">
+      <!--logo area-->
+      <div>
+        <img src="https://raw.githubusercontent.com/heyangineer/iope-main-ui/1836931c708e3fdc944896125360350c4bdb8671/img/logo.svg" />
+      </div>
+      <!--text area-->
+      <div>
+        <div class="text-area">
+          <ul class="flexs">
+            <li>
+              <span class="bolds">Our Company</span>
+              <ul>
+                <li>아이오페 역사</li>
+                <li>아이오페 브랜드</li>
+                <li>아이오페 웹 매거진</li>
+                <li>아이오페 대외사업부</li>
+                <li>아이오페 아카데미</li>
+                <li>아이오페 ESG 경영</li>
+              </ul>
+            </li>
+            <li>
+              <span class="bolds">For Guests</span>
+              <ul>
+                <li>패키지/프로모션</li>
+                <li>아이오페 고객센터</li>
+                <li>온라인 결제</li>
+                <li>스토어</li>
+              </ul>
+            </li>
+            <li>
+              <span class="bolds">Membership</span>
+              <ul>
+                <li>멤버십 종합안내</li>
+                <li>아이오페 리워즈</li>
+                <li>아이오페 프레스티지 클럽</li>
+                <li>아이오페 VIP 서비스</li>
+                <li>마이 아이오페</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="flexs margins">
+            <li class="bolds">개인정보처리방침</li>
+            <li>이용약관</li>
+            <li>사이트맵</li>
+            <li>인재채용</li>
+            <li>윤리경영</li>
+            <li>제휴문의</li>
+          </ul>
+        </div>
+        <hr />
+        <table>
+          <tr>
+            <th scope="col">고객센터</th>
+            <td>080-023-5454</td>
+          </tr>
+          <tr>
+            <th scope="col" class="lefts">이메일</th>
+            <td>support@iope.com</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </footer>
+  <address>
+    <!--sns area-->
+    <div class="wraps space-betweens align-centers">
+      <div>
+        <img src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2020/10/12/bi_amorepacific.png" />
+      </div>
+      <div>
+        <img src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2019/09/09/bi_iope.png" />
+      </div>
+      <div>
+        <img src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2020/02/19/bi_hera.png" />
+      </div>
+      <div>
+        <img src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2019/09/09/bi_espoir_new2.png" />
+      </div>
+      <div>
+        <img src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2020/05/19/bi_lirikos_new.png" />
+      </div>
+      <div>
+        <img src="https://www.apgroup.com/int/ko/brands/__icsFiles/afieldfile/2020/11/25/bi_mamonde_new2_2_4.png" />
+      </div>
+    </div>
+  </address>
+  <script>
+    AOS.init({
+      offset: 120,
+      delay: 0,
+      duration: 2900,
+      easing: "ease",
+      once: false,
+      mirror: false,
+      anchorPlacement: "top-bottom",
+    });
+  </script>
+</body>
+
+</html>
